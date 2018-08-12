@@ -3,6 +3,8 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Техномарт</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 <header class="main-header">
@@ -93,25 +95,25 @@
   <section class="popular-goods">
     <ul class="list">
       <li class="item">
-        <img src="http://placehold.it/150x100">
+        <img src="http://placehold.it/150x100" width="150" height="100" alt="Перфоратор BOSCH BFG 9000">
         <h3>Перфоратор BOSCH BFG 9000</h3>
         <p>32500 Р.</p>
         <a href="catalog-item-1.html">25500 р.</a>
       </li>
       <li class="item">
-        <img src="http://placehold.it/150x100">
+        <img src="http://placehold.it/150x100" width="150" height="100" alt="Перфоратор BOSCH BFG 3000">
         <h3>Перфоратор BOSCH BFG 3000</h3>
         <p>32500 Р.</p>
         <a href="catalog-item-1.html">15500 р.</a>
       </li>
       <li class="item">
-        <img src="http://placehold.it/150x100">
+        <img src="http://placehold.it/150x100" width="150" height="100" alt="Перфоратор BOSCH BFG 6000">
         <h3>Перфоратор BOSCH BFG 6000</h3>
         <p>32500 Р.</p>
         <a href="catalog-item-1.html">25500 р.</a>
       </li>
       <li class="item">
-        <img src="http://placehold.it/150x100">
+        <img src="http://placehold.it/150x100" width="150" height="100" alt="Перфоратор BOSCH BFG 2000">
         <h3>Перфоратор BOSCH BFG 2000</h3>
         <p>32500 Р.</p>
         <a href="catalog-item-1.html">25500 р.</a>
@@ -119,23 +121,36 @@
     </ul>
   </section>
 
-  <section class="popular-manufacturers-all">
+  <section class="popular-manufacturers">
     <h3>Полулярные производители</h3>
     <a class="button" href="popular.html">все производители</a>
   </section>
-  <section class="popular-manufacturers">
+  <section class="popular-manufacturers-list">
+    <h3 class="visually-hidden">Список производителей:</h3>
     <ul class="list">
       <li class="item">
-        <img src="http://placehold.it/150x100">
+        <img src="http://placehold.it/150x100" width="150" height="100" alt="Bosch">
       </li>
       <li class="item">
-        <img src="http://placehold.it/150x100">
+        <img src="http://placehold.it/150x100" width="150" height="100" alt="Makita">
       </li>
       <li class="item">
-        <img src="http://placehold.it/150x100">
+        <img src="http://placehold.it/150x100" width="150" height="100" alt="Dewalt">
       </li>
       <li class="item">
-        <img src="http://placehold.it/150x100">
+        <img src="http://placehold.it/150x100" width="150" height="100" alt="Интерскол">
+      </li>
+      <li class="item">
+        <img src="http://placehold.it/150x100" width="150" height="100" alt="Hitachi">
+      </li>
+      <li class="item">
+        <img src="http://placehold.it/150x100" width="150" height="100" alt="LG">
+      </li>
+      <li class="item">
+        <img src="http://placehold.it/150x100" width="150" height="100" alt="AEG">
+      </li>
+      <li class="item">
+        <img src="http://placehold.it/150x100" width="150" height="100" alt="Metabo">
       </li>
     </ul>
   </section>
@@ -155,9 +170,11 @@
     </div>
     <div>
       <h3 class="service-item-title">Доставка</h3>
-      <p class="service-item-description">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно
-        бесплатно!
-        Ведь мы неплохо зарабатываем, поднимая его на ваш этаж!</p>
+      <p class="service-item-description">
+        Мы с удовольствием доставим ваш товар прямо<br>
+        к вашему подъезду совершенно бесплатно!<br>
+        Ведь мы неплохо зарабатываем,<br>
+        поднимая его на ваш этаж!</p>
     </div>
   </section>
 
@@ -168,14 +185,14 @@
         строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.</p>
 
       <p>Мы можем помочь доставить ваш товар в самые отделённые точки России!<br>
-        Техномарт работает со многими транспортными компаниями:
+        Техномарт работает со многими транспортными компаниями:</p>
       <ul class='transport-list'>
         <li>Деловые линии</li>
         <li>Автотрейдинг</li>
         <li>ЖелДорЭкспедиция</li>
       </ul>
       <a class="button" href="about.html">Подробнее о компании</a>
-      </p>
+
     </div>
     <div class="contacts">
       <h3 class="contact-title">Контакты</h3>
@@ -192,7 +209,7 @@
     <img src="http://placehold.it/220x45" width="220" height="45" alt="Логотип «Техномарт»">
   </a>
   <p class="footer-top-contacts">
-    Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8<br>
+    Адрес: г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
     Телефон: +7 (812) 555-05-55
   </p>
   <div class="footer-top-menu">
@@ -224,9 +241,9 @@
 
   <div class="footer-social">
     <ul>
-      <li><a class="social-button" href="#"><img src="vk.gif"></a></li>
-      <li><a class="social-button" href="#"><img src="fb.gif"></a></li>
-      <li><a class="social-button" href="#"><img src="instagram.gif"></a></li>
+      <li><a class="social-button" href="http://vk.com"><img src="vk.gif" width="30" height="30" alt="vk.com"></a></li>
+      <li><a class="social-button" href="http://fb.com"><img src="fb.gif" width="30" height="30" alt="fb.com"></a></li>
+      <li><a class="social-button" href="http://instagram.com"><img src="instagram.gif" width="30" height="30" alt="instagram.com"></a></li>
     </ul>
   </div>
   <div class="footer-connect">
