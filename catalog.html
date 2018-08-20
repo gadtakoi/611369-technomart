@@ -14,7 +14,9 @@
     </a>
     <div class="site-top-search">
       <div class="title">Поиск:</div>
-      <div class="form"><form class="header-search-form" action="/search/" method="get"><input name="q" aria-label="Искать"></form></div>
+      <div class="form">
+        <form class="header-search-form" action="/search/" method="get"><input name="q" aria-label="Искать"></form>
+      </div>
     </div>
     <ul class="site-top-menu">
       <li class="bookmarks"><a href="/bookmarks/">Закладки: 0</a></li>
@@ -32,7 +34,7 @@
       <div class="name">
         <ul>
           <li class="user-name">Джон Смит</li>
-          <li class="exit"><span class="user-exit"></span></li>
+          <li class="exit"><span class="user-exit" aria-label="Выход"></span></li>
         </ul>
       </div>
       <div class="profile">
@@ -45,18 +47,16 @@
   </div>
 
   <nav class="main-navigation">
-    <div class="main-navigation-inner">
-      <ul class="main-navigation-list">
-        <li><a href="/"><span class="home"></span></a></li>
-        <li><a href="/">Главная</a></li>
-        <li><a href="company.html">Компания</a></li>
-        <li><a href="catalog.html">Каталог</a></li>
-        <li><a href="news.html">Новости</a></li>
-        <li><a href="spec.html">Спецпредложения</a></li>
-        <li><a href="delivery.html">Доставка</a></li>
-        <li><a href="contacts.html">Контакты</a></li>
-      </ul>
-    </div>
+    <ul class="main-navigation-list">
+      <li><a href="/"><span class="home"></span></a></li>
+      <li><a href="/">Главная</a></li>
+      <li><a href="company.html">Компания</a></li>
+      <li><a href="catalog.html">Каталог</a></li>
+      <li><a href="news.html">Новости</a></li>
+      <li><a href="spec.html">Спецпредложения</a></li>
+      <li><a href="delivery.html">Доставка</a></li>
+      <li><a href="contacts.html">Контакты</a></li>
+    </ul>
   </nav>
 </header>
 
@@ -122,13 +122,12 @@
             <label for="power-item1">Аккумуляторные</label>
           </li>
           <li class="filter-item">
-            <input type="radio" id="power-item2" name="power-item"  value="2">
+            <input type="radio" id="power-item2" name="power-item" value="2">
             <label for="power-item2">Сетевые</label>
           </li>
         </ul>
       </fieldset>
-      <button type="submit" class="filter-button button">Показать</button>
-
+      <button type="submit" class="button filter-button">Показать</button>
     </form>
   </section>
 
@@ -147,6 +146,7 @@
   </section>
 
   <section class="catalog">
+    <h3 class="visually-hidden">Каталог товаров:</h3>
     <div class="catalog-items">
       <ul class="list">
         <li class="item">
@@ -300,7 +300,8 @@
   <div class="footer-connect">
     <ul>
       <li>Обратная связь:<a href="mailto:mail@htmlacademy.ru" aria-label="Электропочта">mail@htmlacademy.ru</a></li>
-      <li>Разработано &mdash; <a href="https://htmlacademy.ru/intensive/htmlcss" aria-label="Сайт разработан в htmlacademy.ru">htmlacademy.ru</a></li>
+      <li>Разработано &mdash; <a href="https://htmlacademy.ru/intensive/htmlcss"
+                                 aria-label="Сайт разработан в htmlacademy.ru">htmlacademy.ru</a></li>
     </ul>
   </div>
 </footer>

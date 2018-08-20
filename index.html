@@ -14,7 +14,11 @@
     </a>
     <div class="site-top-search">
       <div class="title">Поиск:</div>
-      <div class="form"><form class="header-search-form" action="/search/" method="get"><input name="q" aria-label="Искать"></form></div>
+      <div class="form">
+        <form class="header-search-form" action="/search/" method="get">
+          <input name="q" aria-label="Искать">
+        </form>
+      </div>
     </div>
     <ul class="site-top-menu">
       <li class="bookmarks"><a href="/bookmarks/">Закладки: 0</a></li>
@@ -83,8 +87,8 @@
           <a href="#"><img src="img/slider/slider-1.jpg" width="620" height="266" alt="Фото 1"></a>
           <a class="hidden" href="#"><img src="img/slider/slider-2.jpg" width="620" height="266" alt="Фото 2"></a>
         </figure>
-        <button class="button slider-button-back" type="button" aria-label="Назад"></button>
-        <button class="button slider-button-next" type="button" aria-label="Вперед"></button>
+        <button class="button slider-button-back" type="button" aria-label="Предыдущее изображение"></button>
+        <button class="button slider-button-next" type="button" aria-label="Следующее узображение"></button>
       </li>
       <li class="advertising-item discount">
         <h3>Скидки 50%</h3>
@@ -240,7 +244,7 @@
 
   <section class="about" aria-label="О компании">
     <div class="description">
-      <h3>Компания Техномарт</h3>
+      <h3>Компания «Техномарт»</h3>
       <p>Настоящий мужской шоппинг начинается здесь! Огромны выбор товаров для ремонта и
         строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.</p>
 
@@ -257,13 +261,14 @@
     <div class="contacts">
       <h3 class="contact-title">Контакты</h3>
       <p class="contact-description">Вы можете забрать товар сами, заехав в наш офисе:
-        <img src="img/minimap.png" width="300" height="158">
+        <img src="img/minimap.png" width="300" height="158" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
         <!-- Google map -->
       </p>
-      <a class="button" href="feedback.html">Заблудились? Напишите нам!</a>
+      <a class="button feedback" href="feedback.html">Заблудились? Напишите нам!</a>
     </div>
 
     <div class="big-map">
+      <h2 class="visually-hidden">Как до нас добраться</h2>
       <button type="button" class="modal-close" aria-label="Закрыть карту"></button>
       <!-- Google map -->
     </div>
@@ -342,7 +347,7 @@
     </div>
 
     <div class="form-control">
-      <label for="callbackText">Ваш e-mail:</label>
+      <label for="callbackText">Текст письма:</label>
       <textarea id="callbackText" class="write-us-text"></textarea>
     </div>
 
