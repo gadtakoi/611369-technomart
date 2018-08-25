@@ -3,6 +3,9 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Техномарт</title>
+  <link type="text/css" href="//fonts.googleapis.com/css?family=Cuprum" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans&amp;subset=cyrillic" rel="stylesheet" />
+
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -81,8 +84,8 @@
     <form method="post" action="/filter/">
       <h3 class="visually-hidden">Фильтр параметров:</h3>
       <div class="filter-text">Фильтр:</div>
-      <div class="filter-title">Цена:</div>
-      <div class="filter-text">
+        <div class="filter-title">Цена:</div>
+      <div class="filter-range">
         <input type="range" min="0" max="100" step="1" value="80">
         <input type="text" value="0"> - <input type="text" value="30000">
 
@@ -156,6 +159,7 @@
             </div>
             <h3>Перфоратор BOSCH BFG 9000</h3>
             <p>32500 Р.</p>
+            <span class="current">32500 Р.</span>
           </a>
         </li>
         <li class="item">
@@ -165,6 +169,7 @@
             </div>
             <h3>Перфоратор BOSCH BFG 3000</h3>
             <p>32500 Р.</p>
+            <span class="current">32500 Р.</span>
           </a>
         </li>
         <li class="item new">
@@ -178,6 +183,7 @@
             </div>
             <h3>Перфоратор BOSCH BFG 6000</h3>
             <p>32500 Р.</p>
+            <span class="current">32500 Р.</span>
           </a>
         </li>
         <li class="item">
@@ -187,6 +193,7 @@
             </div>
             <h3>Перфоратор BOSCH BFG 9000</h3>
             <p>32500 Р.</p>
+            <span class="current">32500 Р.</span>
           </a>
         </li>
         <li class="item new"><a href="catalog-item-5.html">
@@ -195,6 +202,7 @@
           </div>
           <h3>Перфоратор BOSCH BFG 3000</h3>
           <p>32500 Р.</p>
+          <span class="current">32500 Р.</span>
         </a>
         </li>
         <li class="item">
@@ -204,6 +212,7 @@
             </div>
             <h3>Перфоратор BOSCH BFG 6000</h3>
             <p>32500 Р.</p>
+            <span class="current">32500 Р.</span>
           </a>
         </li>
         <li class="item new">
@@ -213,6 +222,7 @@
             </div>
             <h3>Перфоратор BOSCH BFG 9000</h3>
             <p>32500 Р.</p>
+            <span class="current">32500 Р.</span>
           </a>
         </li>
         <li class="item">
@@ -222,6 +232,7 @@
             </div>
             <h3>Перфоратор BOSCH BFG 3000</h3>
             <p>32500 Р.</p>
+            <span class="current">32500 Р.</span>
           </a>
         </li>
         <li class="item">
@@ -231,6 +242,7 @@
             </div>
             <h3>Перфоратор BOSCH BFG 6000</h3>
             <p>32500 Р.</p>
+            <span class="current">32500 Р.</span>
           </a>
         </li>
       </ul>
@@ -238,9 +250,9 @@
 
     <ul class="catalog-paginator" aria-label="Пагинатор">
       <li class="page current" aria-label="Текущая страница 1">1</li>
-      <li class="page" aria-label="Страница 2">2</li>
-      <li class="page" aria-label="Страница 3">3</li>
-      <li class="page" aria-label="Перейти к следующей странице">следующая</li>
+      <li class="page" aria-label="Страница 2"><a href="#">2</a></li>
+      <li class="page" aria-label="Страница 3"><a href="#">3</a></li>
+      <li class="page" aria-label="Перейти к следующей странице"><a href="#">следующая</a></li>
     </ul>
 
   </section>
