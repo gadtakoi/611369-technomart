@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Техномарт</title>
-  <link type="text/css" href="//fonts.googleapis.com/css?family=Cuprum" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css?family=PT+Sans&amp;subset=cyrillic" rel="stylesheet" />
+  <link type="text/css" href="//fonts.googleapis.com/css?family=Cuprum" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans&amp;subset=cyrillic" rel="stylesheet"/>
 
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
@@ -65,15 +65,15 @@
   <section class="catalog">
     <h2 class="visually-hidden">Разделы каталога</h2>
     <ul class="catalog-list">
-      <li class="catalog-item">
+      <li class="catalog-item material">
         <h3>Материалы</h3>
         <a class="button" href="materials.html">На любой вкус</a>
       </li>
-      <li class="catalog-item">
+      <li class="catalog-item tool">
         <h3>Инструмент</h3>
         <a class="button" href="tools.html">На все случаи жизни</a>
       </li>
-      <li class="catalog-item">
+      <li class="catalog-item technique">
         <h3>Техника</h3>
         <a class="button" href="equipment.html">Для стройки</a>
       </li>
@@ -85,7 +85,9 @@
       <li class="slider">
         <h3>Дрели</h3>
         <p>Соседям на радость</p>
-        <a href="catalog.html">Открыть каталог</a>
+        <div class="open-catalog">
+          <div></div>
+          <a href="catalog.html">Открыть каталог</a></div>
         <figure class="slider-content">
           <a href="#"><img src="img/slider/slider-1.jpg" width="620" height="266" alt="Фото 1"></a>
           <a class="hidden" href="#"><img src="img/slider/slider-2.jpg" width="620" height="266" alt="Фото 2"></a>
@@ -105,8 +107,8 @@
   </section>
 
   <section class="popular-goods-all">
-    <h3>Полулярные товары</h3>
-    <a class="button" href="popular.html">все популярные товары</a>
+    <div class="popular-goods"><h3>Популярные товары</h3></div>
+    <div class="all-goods"><a class="button" href="popular.html">все популярные товары</a></div>
   </section>
 
   <section class="catalog" aria-label="Каталог товаров">
@@ -133,12 +135,8 @@
           </a>
         </li>
         <li class="item">
-          <div class="buttons">
-            <button class="buy">Купить</button>
-            <button class="bookmark">В закладки</button>
-          </div>
           <a href="catalog-item-3.html">
-            <div class="item-img hidden">
+            <div class="item-img">
               <img src="img/product/product-3.jpg" width="144" height="128" alt="Перфоратор BOSCH BFG 6000">
             </div>
             <h3>Перфоратор BOSCH BFG 6000</h3>
@@ -158,13 +156,13 @@
         </li>
       </ul>
     </div>
-
   </section>
 
   <section class="popular-manufacturers">
-    <h3>Полулярные производители</h3>
-    <a class="button" href="popular.html">все производители</a>
+    <div class="title"><h3>Полулярные производители</h3></div>
+    <div class="link"><a class="button" href="popular.html">все производители</a></div>
   </section>
+
   <section class="popular-manufacturers-list">
     <h3 class="visually-hidden">Список производителей:</h3>
     <ul class="list">
@@ -214,7 +212,7 @@
   <section class="service">
     <div class="description">
       <h3>Сервисы</h3>
-      <p>Хороший интернетмагазин отличается от плохого не только ценами!
+      <p>Хороший интернет магазин отличается от плохого не только ценами!<br>
         Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
     </div>
     <div class="service-list">
@@ -262,13 +260,14 @@
         <li>Автотрейдинг</li>
         <li>ЖелДорЭкспедиция</li>
       </ul>
-      <a class="button" href="about.html">Подробнее о компании</a>
+      <a class="button more-info" href="about.html">Подробнее о компании</a>
 
     </div>
     <div class="contacts">
       <h3 class="contact-title">Контакты</h3>
-      <p class="contact-description">Вы можете забрать товар сами, заехав в наш офисе:
-        <img src="img/minimap.png" width="300" height="158" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
+      <p class="contact-description">Вы можете забрать товар сами,<br> заехав в наш офисе:
+        <img src="img/minimap.png" width="300" height="158"
+             alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
         <!-- Google map -->
       </p>
       <a class="button feedback" href="feedback.html">Заблудились? Напишите нам!</a>
@@ -324,7 +323,7 @@
   </div>
   <div class="footer-connect">
     <ul>
-      <li>Обратная связь:<a href="mailto:mail@htmlacademy.ru" aria-label="Электропочта">mail@htmlacademy.ru</a></li>
+      <li>Обратная связь: <a href="mailto:mail@htmlacademy.ru" aria-label="Электропочта">mail@htmlacademy.ru</a></li>
       <li>Разработано &mdash; <a href="https://htmlacademy.ru/intensive/htmlcss"
                                  aria-label="Сайт разработан в htmlacademy.ru">htmlacademy.ru</a></li>
     </ul>
@@ -344,25 +343,24 @@
 
   <form class="modal-write-us-form" action="/writeus/" method="post">
     <div class="form-input write-us-name">
-      <label for="callbackName">Ваше Имя:</label>
+      <label for="callbackName">Ваше Имя:</label><br>
       <input type="text" id="callbackName" name="name" placeholder="Имя Фамилия">
     </div>
 
     <div class="form-input write-us-email">
-      <label for="callbackName">Ваш e-mail:</label>
+      <label for="callbackName">Ваш e-mail:</label><br>
       <input type="text" id="callbackEmail" name="name" placeholder="mail@example.com ">
     </div>
 
-    <div class="form-control">
-      <label for="callbackText">Текст письма:</label>
-      <textarea id="callbackText" class="write-us-text"></textarea>
+    <div class="form-text">
+      <label for="callbackText">Текст письма:</label><br>
+      <textarea id="callbackText" cols="75"  rows="6" class="write-us-text"></textarea>
     </div>
 
     <div class="modal-buttons">
-      <button type="submit" class="write-us-send">Отправить</button>
+      <button type="submit" class="button write-us-send">Отправить</button>
     </div>
   </form>
-
 </div>
 
 </body>

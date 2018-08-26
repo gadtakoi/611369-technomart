@@ -15,6 +15,15 @@ body {
   /*background-repeat: no-repeat;*/
 }
 
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+
+}
+
 .visually-hidden {
   position: absolute;
   clip: rect(0 0 0 0);
@@ -23,11 +32,43 @@ body {
   margin: -1px;
 }
 
-/*font-family: 'PT Sans', sans-serif;*/
+.button {
+  background-color: #ee3643;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  vertical-align: middle;
+  height: 18px;
+  text-align: center;
+  text-transform: uppercase;
+  border-radius: 4px;
+  color: white;
+}
+
+.main-header-inner {
+  background-color: #293449;
+}
+
+.page-header {
+  background-color: #f3f7f8;
+}
+
+.main-navigation {
+  background-color: #32425c;
+}
+
+.main-navigation .main-navigation-list a {
+  color: white;
+}
 
 .site-top-search, .site-top-menu a {
   font-size: 17px;
   line-height: 18px;
+  color: #ffffff;
+}
+
+.site-top-search, .site-top-menu li {
+  list-style: none;
+
 }
 
 .page-header .slogan {
@@ -45,22 +86,28 @@ body {
 .page-header .address {
   font-size: 14px;
   line-height: 23px;
+  color: #32425c;
 }
 
 .page-header .block-user a {
   font-size: 21px;
   color: black;
+  padding: 10px;
+  background-color: white;
 }
 
 .main-navigation .main-navigation-list a {
   font-size: 17px;
 }
 
+.main-navigation .main-navigation-list li {
+  list-style: none;
+}
+
 .catalog-list h3, .advertising-item h3 {
   font-size: 24px;
   font-weight: bold;
   line-height: 30px;
-
 }
 
 .catalog-list a, .advertising-item a {
@@ -71,7 +118,6 @@ body {
 .advertising .slider h3 {
   font-size: 36px;
   font-weight: bold;
-
 }
 
 .advertising .slider p {
@@ -80,20 +126,60 @@ body {
 }
 
 .advertising .slider a {
+  padding-top: 10px;
   font-size: 14px;
   line-height: 18px;
+  color: white;
+  margin-top: 10px;
+}
 
+.advertising .slider .open-catalog {
+  display: table-cell;
+  vertical-align: middle;
+  background-color: #ee3643;
+  height: 38px;
+  width: 195px;
+  text-align: center;
+  text-transform: uppercase;
+  border-radius: 4px;
+}
+
+.popular-goods-all {
+  display: inline-block;
+  background-color: #f9f5f0;
+  height: 90px;
+  width: 100%;
 }
 
 .popular-goods-all h3 {
   font-size: 30px;
   color: #32425c;
+}
+
+.popular-goods-all .all-goods a {
+  font-size: 14px;
+  line-height: 18px;
+  color: white;
 
 }
 
-.popular-goods-all a {
-  font-size: 14px;
-  line-height: 18px;
+.popular-goods-all .popular-goods {
+  width: 300px;
+  display: inline-block;
+  margin-right: 60%;
+}
+
+.popular-goods-all .all-goods {
+  display: inline-block;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  vertical-align: middle;
+  background-color: #ee3643;
+  height: 18px;
+  width: 253px;
+  text-align: center;
+  text-transform: uppercase;
+  border-radius: 4px;
 }
 
 .catalog-items .item {
@@ -104,6 +190,7 @@ body {
   font-size: 18px;
   font-weight: bold;
   line-height: 20px;
+  color: black;
 }
 
 .catalog-items .item p, .catalog-items .item span {
@@ -136,13 +223,79 @@ body {
   color: black;
 }
 
+.catalog-list li.catalog-item, .advertising-list li.advertising-item {
+  height: 123px;
+  width: 300px;
+  color: white;
+}
+
+.catalog-list li.catalog-item a, .advertising-item a {
+  color: white;
+  padding: 20px;
+  background-color: rgba(225, 225, 225, .6);
+
+}
+
+li.catalog-item.material {
+  background-color: #ffbf47;
+}
+
+li.catalog-item.tool {
+  background-color: #3bbce3;
+}
+
+li.catalog-item.technique {
+  background-color: #dc91d8;
+}
+
+li.advertising-item.discount {
+  background-color: #8ed78f;
+}
+
+li.advertising-item.delivery {
+  background-color: #ffc047;
+}
+
+.popular-manufacturers {
+  background-color: #f9f5f0;
+  display: flex;
+  width: 100%;
+  height: 90px;
+}
+
+.popular-manufacturers .title {
+  width: 400px;
+  height: 200px;
+  margin-left: 30px;
+}
+
+.popular-manufacturers .link {
+  margin: auto 25px auto auto;
+  background-color: #ee3643;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  vertical-align: middle;
+  height: 18px;
+  width: 253px;
+  text-align: center;
+  text-transform: uppercase;
+  border-radius: 4px;
+}
+
 .popular-manufacturers h3 {
   font-size: 30px;
+  color: black;
 }
 
 .popular-manufacturers a {
   font-size: 14px;
   line-height: 18px;
+  color: white;
+}
+
+.service {
+  color: black;
+  background-color: #f4f8f9;
 }
 
 .service .description h3 {
@@ -154,18 +307,32 @@ body {
   line-height: 24px;
 }
 
-.service-list .service-item li {
+.service-list li.service-item {
+  padding-top: 10px;
+  padding-left: 10px;
+  list-style: none;
+  width: 240px;
+  height: 42px;
   font-size: 21px;
   line-height: 30px;
   font-weight: bold;
+  color: white;
+  background-color: #32425c;
+  border-bottom: 1px solid gray;
 }
 
-.service-item-title h3 {
+.service-list li.service-item.selected {
+  color: #32425c;
+  background-color: white;
+}
+
+h3.service-item-title {
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 36px;
+  color: #32425c;
 }
 
-.service-item-description p {
+p.service-item-description {
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 13px;
   line-height: 24px;
@@ -173,7 +340,6 @@ body {
 
 .about {
   color: black;
-
 }
 
 .about .description h3 {
@@ -194,6 +360,16 @@ body {
   font-size: 14px;
   line-height: 18px;
   color: white;
+}
+
+.about a.more-info {
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.contacts .feedback {
+  padding-left: 50px;
+  padding-right: 50px;
 }
 
 .contacts {
@@ -217,20 +393,30 @@ body {
 
 }
 
+.footer-top {
+  background-color: #32425c;
+}
+
 .footer-top .footer-top-contacts p {
   font-size: 18px;
   line-height: 24px;
 }
 
-.footer-top-menu .footer-menu-main white li {
+.footer-top-menu .footer-menu-main .white li a {
   font-size: 18px;
   line-height: 24px;
+  color: white;
 }
 
-.footer-top-menu .footer-menu-main yellow li {
+.footer-top-menu .footer-menu-catalog .yellow li a {
   font-size: 18px;
   line-height: 24px;
   color: #ffd180;
+}
+
+.footer-bottom {
+  height: 108px;
+  background-color: #293449;
 }
 
 .footer-bottom p {
@@ -333,7 +519,15 @@ body {
   color: black;
 }
 
+.catalog-description {
+  font-family: "PT Sans", Arial, sans-serif;
+
+  background: #f2f6f8;
+  padding-top: 65px;
+  padding-bottom: 65px;
+}
 .catalog-description h2 {
+  margin-top: 0;
   font-size: 30px;
   color: black;
 }
@@ -342,4 +536,30 @@ body {
   font-size: 13px;
   line-height: 24px;
   color: black;
+}
+
+.modal-write-us {
+  width: 622px;
+  display: block;
+  color: black;
+  border-top: 5px solid red;
+  box-shadow: 0 0 35px  rgba(122,122,122,0.5);;
+}
+
+.modal-write-us .form-input, .modal-write-us .form-text {
+  margin: 30px;
+}
+
+.modal-write-us .modal-buttons {
+  text-align: center;
+  background-color: #f4f4f4;
+  height: 115px;
+}
+
+.modal-write-us .modal-buttons button{
+  margin-top: 40px;
+  padding: 10px;
+  border: 0;
+  width: 462px;
+  height: 40px;
 }
