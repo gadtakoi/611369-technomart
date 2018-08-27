@@ -1,27 +1,25 @@
+html {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   padding: 0;
-
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 15px;
-  /*line-height: 24px;*/
-  /*font-weight: 700;*/
   color: #ffffff;
-  /*text-transform: uppercase;*/
+}
 
-  /*background-color: #000000;*/
-  /*background-image: url("img/bg.jpg");*/
-  /*background-position: top center;*/
-  /*background-repeat: no-repeat;*/
+img {
+  max-width: 100%
 }
 
 a {
   text-decoration: none;
 }
 
-li {
+ul {
   list-style: none;
-
 }
 
 .visually-hidden {
@@ -48,6 +46,14 @@ li {
   background-color: #293449;
 }
 
+.main-header-inner:hover {
+  background-color: #212a3a;
+}
+
+.main-header-inner:hover {
+  background-color: #212a3a;
+}
+
 .page-header {
   background-color: #f3f7f8;
 }
@@ -66,9 +72,39 @@ li {
   color: #ffffff;
 }
 
+.site-top-search input[type="text"] {
+  width: 165px;
+  color: white;
+  border: 0;
+  background-color: #293449;
+}
+
+.site-top-search input[type="text"]:hover {
+  color: white;
+  border: 0;
+  background-color: #212a3a;
+}
+
+.site-top-search input[type="text"]:active {
+  color: black;
+  border: 0;
+  background-color: white;
+}
+
 .site-top-search, .site-top-menu li {
   list-style: none;
+}
 
+.site-top-menu li.order {
+  background-color: #63a63e;
+}
+
+.site-top-menu li.order:hover {
+  background-color: #5fbb2d;
+}
+
+.site-top-menu li.order:active {
+  background-color: #518534;
 }
 
 .page-header .slogan {
@@ -96,15 +132,64 @@ li {
   background-color: white;
 }
 
+.page-header .block-user a:hover {
+  color: #ee3643;
+}
+
+.page-header .block-user a:active {
+  color: rgba(0, 0, 0, 0.2);
+}
+
+.page-header .block-user .user-name {
+  font-size: 21px;
+  color: black;
+  padding: 10px;
+  background-color: white;
+}
+
+.page-header .block-user .user-name:active {
+  color: rgba(0, 0, 0, 0.3);;
+}
+
+.page-header .block-user .profile a {
+  font-size: 16px;
+  line-height: 18px;
+  color: #32425c;
+  padding: 10px;
+  background: none;
+  text-decoration: underline;
+}
+
+.page-header .block-user .profile a:hover {
+  color: #ee3643;
+}
+
+.page-header .block-user .profile a:active {
+  color: rgba(50, 66, 92, 0.3);
+}
+
 .main-navigation .main-navigation-list a {
   font-size: 17px;
 }
 
 .main-navigation .main-navigation-list li {
   list-style: none;
+  display: inline-block;
 }
 
-.catalog-list h3, .advertising-item h3 {
+.main-navigation .main-navigation-list li:hover {
+  background-color: #293449;
+}
+
+.main-navigation .main-navigation-list li:active {
+  background-color: #293449;
+}
+
+.main-navigation .main-navigation-list a:active {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.catalog-list h3, .advertising-list h3 {
   font-size: 24px;
   font-weight: bold;
   line-height: 30px;
@@ -142,6 +227,14 @@ li {
   text-align: center;
   text-transform: uppercase;
   border-radius: 4px;
+}
+
+.advertising .slider .open-catalog:hover {
+  background-color: #ca2c37;
+}
+
+.advertising .slider .open-catalog:active {
+  background-color: #ba2732;
 }
 
 .popular-goods-all {
@@ -186,6 +279,10 @@ li {
   font-family: "PT Sans", Arial, sans-serif;
 }
 
+.catalog-items .item:hover {
+  box-shadow: 0 0 10px rgba(122, 122, 122, 0.5);;
+}
+
 .catalog-items .item h3 {
   font-size: 18px;
   font-weight: bold;
@@ -214,26 +311,55 @@ li {
   line-height: 18px;
 }
 
-.catalog-items .buttons .buy {
+.catalog-items .buttons button.buy {
   color: white;
   background-color: #63a63e;
 }
 
-.catalog-items .buttons .bookmark {
-  color: black;
+.catalog-items .buttons button.bookmark {
+  color: #32425c;
+  background-color: white;
+  border-color: #63a63e;
+}
+
+.catalog-items .buttons button.bookmark:hover {
+  border-color: #518534;
+}
+
+.catalog-items .buttons button.bookmark:active {
+  color: rgba(193, 198, 206, 0.3);
+  border-color: #c1c6ce;
 }
 
 .catalog-list li.catalog-item, .advertising-list li.advertising-item {
-  height: 123px;
+  padding: 25px;
+}
+
+.catalog-list li.catalog-item, .advertising-list li.advertising-item {
+  height: 73px;
   width: 300px;
   color: white;
 }
 
-.catalog-list li.catalog-item a, .advertising-item a {
-  color: white;
-  padding: 20px;
-  background-color: rgba(225, 225, 225, .6);
+.catalog-list h3, .advertising-list h3 {
+  margin: 0 0 20px 0;
+}
 
+.catalog-list li.catalog-item a, .advertising-list .advertising-item a {
+  color: white;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: rgba(225, 225, 225, .6);
+}
+
+.catalog-list li.catalog-item a:hover, .advertising-list .advertising-item a:hover {
+  background-color: #cccccc;
+}
+
+.catalog-list li.catalog-item a:active, .advertising-list .advertising-item a:active {
+  background-color: #b2b2b2;
 }
 
 li.catalog-item.material {
@@ -402,16 +528,42 @@ p.service-item-description {
   line-height: 24px;
 }
 
+.footer-top-menu .footer-menu-main .white li {
+  display: inline-block;
+}
+
 .footer-top-menu .footer-menu-main .white li a {
   font-size: 18px;
   line-height: 24px;
   color: white;
 }
 
+.footer-top-menu .footer-menu-main .white li a:hover {
+  text-decoration: underline;
+}
+
+.footer-top-menu .footer-menu-main .white li a:active {
+  color: rgba(255, 255, 255, 0.5);
+  text-decoration: none;
+}
+
+.footer-top-menu .footer-menu-catalog .yellow li {
+  display: inline-block;
+}
+
 .footer-top-menu .footer-menu-catalog .yellow li a {
   font-size: 18px;
   line-height: 24px;
   color: #ffd180;
+}
+
+.footer-top-menu .footer-menu-catalog .yellow li a:hover {
+  text-decoration: underline;
+}
+
+.footer-top-menu .footer-menu-catalog .yellow li a:active {
+  color: rgba(255, 255, 255, 0.5);
+  text-decoration: none;
 }
 
 .footer-bottom {
@@ -431,6 +583,19 @@ p.service-item-description {
 
 .footer-bottom .footer-connect a {
   color: #ffd180;
+}
+
+.footer-bottom .footer-connect a:hover {
+  text-decoration: underline;
+}
+
+.footer-bottom .footer-connect a:active {
+  text-decoration: none;
+  color: #ee3643;
+}
+
+.breadcrumbs li {
+  display: inline-block;
 }
 
 .breadcrumbs a {
@@ -478,6 +643,13 @@ p.service-item-description {
   text-transform: uppercase;
 }
 
+.filter .filter-items label:hover {
+}
+
+.filter .filter-items label:active {
+  color: rgba(0, 0, 0, 0.4);
+}
+
 .filter .filter-buttons {
   font-size: 13px;
   line-height: 18px;
@@ -497,12 +669,25 @@ p.service-item-description {
 .sorting-items a {
   font-size: 13px;
   line-height: 18px;
-  color: black;
-  opacity: 0.3;
+  text-decoration: underline;
+  text-decoration-style: dotted;
+  text-decoration-color: #ee3643;
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.sorting-items a:hover {
+  color: rgba(0, 0, 0, 1);
+}
+
+.sorting-items a:active {
+  color: rgba(238, 54, 67, 1);
+  text-decoration: none;
+
 }
 
 .sorting-items a.selected {
   color: #ee3643;
+  text-decoration: none;
   opacity: 1;
 }
 
@@ -519,13 +704,38 @@ p.service-item-description {
   color: black;
 }
 
+.catalog-paginator li {
+  text-transform: uppercase;
+  display: inline;
+  text-align: center;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin: 5px;
+  border: 1px solid lightgray;
+}
+
+.catalog-paginator li:last-child {
+  padding-left: 30px;
+  padding-right: 30px;;
+}
+
+.catalog-paginator li:hover {
+  border: 1px solid #bdc6ca;
+}
+
+.catalog-paginator li:active {
+  border: 1px solid #ee3643;
+}
+
 .catalog-description {
   font-family: "PT Sans", Arial, sans-serif;
-
   background: #f2f6f8;
   padding-top: 65px;
   padding-bottom: 65px;
 }
+
 .catalog-description h2 {
   margin-top: 0;
   font-size: 30px;
@@ -538,12 +748,24 @@ p.service-item-description {
   color: black;
 }
 
+.popular-manufacturers-list .item:hover {
+  box-shadow: 0 0 15px rgba(122, 122, 122, 0.5);;
+}
+
+.popular-manufacturers-list .item:active {
+  box-shadow: 0 0 7px rgba(122, 122, 122, 0.5);;
+}
+
+.popular-manufacturers-list .item img:active {
+  opacity: 0.3;
+}
+
 .modal-write-us {
   width: 622px;
   display: block;
   color: black;
   border-top: 5px solid red;
-  box-shadow: 0 0 35px  rgba(122,122,122,0.5);;
+  box-shadow: 0 0 35px rgba(122, 122, 122, 0.5);;
 }
 
 .modal-write-us .form-input, .modal-write-us .form-text {
@@ -556,7 +778,7 @@ p.service-item-description {
   height: 115px;
 }
 
-.modal-write-us .modal-buttons button{
+.modal-write-us .modal-buttons button {
   margin-top: 40px;
   padding: 10px;
   border: 0;
