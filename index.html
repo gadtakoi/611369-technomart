@@ -65,7 +65,7 @@
 
   <h1 class="visually-hidden">Интернет магазин «Техномарт»</h1>
 
-  <section class="catalog">
+  <section class="main-catalog">
     <h2 class="visually-hidden">Разделы каталога</h2>
     <ul class="catalog-list">
       <li class="catalog-item material">
@@ -96,14 +96,14 @@
         </figure>
         <div class="slider-contol">
           <div>
-          <button class="slider-button-back" type="button" aria-label="Предыдущее изображение">
-            <img src="img/svg-technomart/icon-left.svg">
-          </button>
+            <button class="slider-button-back" type="button" aria-label="Предыдущее изображение">
+              <img src="img/svg-technomart/icon-left.svg">
+            </button>
           </div>
           <div>
-          <button class=" slider-button-next" type="button" aria-label="Следующее изображение">
-            <img src="img/svg-technomart/icon-right.svg">
-          </button>
+            <button class=" slider-button-next" type="button" aria-label="Следующее изображение">
+              <img src="img/svg-technomart/icon-right.svg">
+            </button>
           </div>
         </div>
       </div>
@@ -118,12 +118,11 @@
         </li>
       </ul>
     </div>
-
   </section>
 
   <section class="popular-goods-all">
     <div class="popular-goods"><h3>Популярные товары</h3></div>
-    <div class="all-goods"><a class="button" href="popular.html">все популярные товары</a></div>
+    <div class="all-goods button"><a href="popular.html">все популярные товары</a></div>
   </section>
 
   <section class="catalog" aria-label="Каталог товаров">
@@ -223,45 +222,49 @@
       </li>
     </ul>
   </section>
-
+</main>
+<main class="service-wrapper">
   <section class="service">
     <div class="description">
       <h3>Сервисы</h3>
       <p>Хороший интернет магазин отличается от плохого не только ценами!<br>
         Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
     </div>
-    <div class="service-list">
-      <ul>
-        <li class="service-item delivery selected">Доставка</li>
-        <li class="service-item warranty">Гарантия</li>
-        <li class="service-item credit">Кредит</li>
-      </ul>
-    </div>
-    <div class="service-show-delivery">
-      <h3 class="service-item-title">Доставка</h3>
-      <p class="service-item-description">
-        Мы с удовольствием доставим ваш товар прямо<br>
-        к вашему подъезду совершенно бесплатно!<br>
-        Ведь мы неплохо зарабатываем,<br>
-        поднимая его на ваш этаж!</p>
-    </div>
-    <div class="service-show-warranty">
-      <h3 class="service-item-title">Гарантия</h3>
-      <p class="service-item-description">
-        Интересное описание гарантии<br>
-        Можете вернуть товар в течение 14 дней<br>
-        Но деньги мы оставим себе.
-      </p>
-    </div>
-    <div class="service-show-credit">
-      <h3 class="service-item-title">Кредит</h3>
-      <p class="service-item-description">
-        Сказочные условия кредита.<br>
-        Невероятные условия кредита, под низкий процент!
-      </p>
+    <div class="service-info">
+      <div class="service-list">
+        <ul>
+          <li class="service-item delivery selected">Доставка</li>
+          <li class="service-item warranty">Гарантия</li>
+          <li class="service-item credit">Кредит</li>
+        </ul>
+      </div>
+      <div class="service-show-delivery">
+        <h3 class="service-item-title">Доставка</h3>
+        <p class="service-item-description">
+          Мы с удовольствием доставим ваш товар прямо<br>
+          к вашему подъезду совершенно бесплатно!<br>
+          Ведь мы неплохо зарабатываем,<br>
+          поднимая его на ваш этаж!</p>
+      </div>
+      <div class="service-show-warranty hidden">
+        <h3 class="service-item-title">Гарантия</h3>
+        <p class="service-item-description">
+          Интересное описание гарантии<br>
+          Можете вернуть товар в течение 14 дней<br>
+          Но деньги мы оставим себе.
+        </p>
+      </div>
+      <div class="service-show-credit hidden">
+        <h3 class="service-item-title">Кредит</h3>
+        <p class="service-item-description">
+          Сказочные условия кредита.<br>
+          Невероятные условия кредита, под низкий процент!
+        </p>
+      </div>
     </div>
   </section>
-
+</main>
+<main class="container">
   <section class="about" aria-label="О компании">
     <div class="description">
       <h3>Компания «Техномарт»</h3>

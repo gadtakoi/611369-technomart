@@ -442,13 +442,15 @@ ul.catalog-list:last-child {
 .slider .open-catalog:active {
   background-color: #ba2732;
 }
+
 .slider-contol {
   display: flex;
   justify-content: space-between;
   margin-right: 40px;
-  margin-left: 0px;  margin-left: 24px;
+  margin-left: 24px;
 
 }
+
 button.slider-button-back, button.slider-button-next {
   position: absolute;
   padding: 0;
@@ -456,14 +458,20 @@ button.slider-button-back, button.slider-button-next {
   border: 0;
   cursor: pointer;
 }
+
 button.slider-button-back {
-   z-index: 10;
+  z-index: 10;
 }
- button.slider-button-next {
-   z-index: 10;
+
+button.slider-button-next {
+  z-index: 10;
 }
+
 .popular-goods-all {
-  display: inline-block;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  vertical-align: middle;
   background-color: #f9f5f0;
   height: 90px;
   width: 100%;
@@ -478,26 +486,24 @@ button.slider-button-back {
   font-size: 14px;
   line-height: 18px;
   color: white;
-
 }
 
 .popular-goods-all .popular-goods {
-  width: 300px;
+  width: 280px;
   display: inline-block;
   margin-right: 37%;
+  margin-left: 30px;
+  color: #32425c;
 }
 
 .popular-goods-all .all-goods {
+  top: 25px;
+  margin: 0;
+  margin-right: 24px;
   display: inline-block;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  vertical-align: middle;
-  background-color: #ee3643;
-  height: 18px;
   width: 253px;
-  text-align: center;
-  text-transform: uppercase;
-  border-radius: 4px;
+
+  vertical-align: middle;
 }
 
 .catalog-items .list {
@@ -636,6 +642,7 @@ li.advertising-item.delivery {
 }
 
 .popular-manufacturers {
+
   background-color: #f9f5f0;
   display: flex;
   width: 100%;
@@ -663,7 +670,7 @@ li.advertising-item.delivery {
 
 .popular-manufacturers h3 {
   font-size: 30px;
-  color: black;
+  color: #32425c;
 }
 
 .popular-manufacturers a {
@@ -672,7 +679,17 @@ li.advertising-item.delivery {
   color: white;
 }
 
+.service-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #f3f7f8;
+  padding-bottom: 60px;
+}
+
 .service {
+  width: 940px;
   color: black;
   background-color: #f4f8f9;
 }
@@ -685,7 +702,23 @@ li.advertising-item.delivery {
   font-size: 13px;
   line-height: 24px;
 }
+.service-info {
+  display: flex;
+  margin-top: 60px;
+  justify-content: flex-start;
+  flex-shrink: 0;
+}
+.service-info .hidden {
+   display: none;
+ }
+.service-list {
+  margin-right: 80px;
+}
+.service-list ul {
+  margin: 0;
+  padding: 0;
 
+}
 .service-list li.service-item {
   padding-top: 10px;
   padding-left: 10px;
@@ -698,6 +731,7 @@ li.advertising-item.delivery {
   color: white;
   background-color: #32425c;
   border-bottom: 1px solid gray;
+
 }
 
 .service-list li.service-item.selected {
@@ -706,6 +740,9 @@ li.advertising-item.delivery {
 }
 
 h3.service-item-title {
+  margin: 0;
+  margin-bottom: 20px;
+  padding: 0;
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 36px;
   color: #32425c;
@@ -858,7 +895,7 @@ p.service-item-description {
   line-height: 18px;
 }
 
-.catalog {
+.main-catalog {
   margin-top: 60px;
 }
 
@@ -1003,6 +1040,12 @@ p.service-item-description {
   font-size: 13px;
   line-height: 24px;
   color: black;
+}
+
+.popular-manufacturers-list {
+  margin: 0;
+  margin-top: 5px;
+  margin-bottom: 80px;
 }
 
 .popular-manufacturers-list .item:hover {
