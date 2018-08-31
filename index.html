@@ -11,50 +11,53 @@
 </head>
 <body>
 <header class="main-header">
-  <div class="main-header-inner">
-    <a class="main-header-logo" href="/">
-      <img src="http://placehold.it/220x45" width="220" height="45" alt="«Техномарт»">
-    </a>
-    <div class="site-top-search">
-      <div class="title">Поиск:</div>
-      <div class="form">
-        <form class="header-search-form" action="/search/" method="get">
-          <input type="text" name="q" aria-label="Искать">
-        </form>
+  <div class="main-header-inner-wrapper">
+    <div class="main-header-inner">
+      <a class="main-header-logo" href="/">
+        <img src="img/logo.png" width="110" height="18" alt="«Техномарт»">
+      </a>
+      <div class="site-top-search">
+        <div class="title">Поиск:</div>
+        <div class="form">
+          <form class="header-search-form" action="/search/" method="get">
+            <input type="text" name="q" aria-label="Искать">
+          </form>
+        </div>
       </div>
-    </div>
-    <ul class="site-top-menu">
-      <li class="bookmarks"><a href="/bookmarks/">Закладки: 0</a></li>
-      <li class="cart"><a href="/cart/">Корзина: 10</a></li>
-      <li class="order"><a href="/order/">Оформить заказ</a></li>
-    </ul>
-  </div>
-  <div class="page-header">
-    <p class="slogan">Интернет магазин строительных материалов и инструментов для ремонта</p>
-    <div class="contacts">
-      <div class="phone">+7 (812) 555-05-55</div>
-      <div class="address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</div>
-    </div>
-    <div class="block-user">
-      <a class="login" href="/login/">Войти</a>
-      <a class="registration" href="/registration/"> Регистрация</a>
-    </div>
-  </div>
-
-  <nav class="main-navigation">
-    <div class="main-navigation-inner">
-      <ul class="main-navigation-list">
-        <li><a href="/"><span class="home"></span></a></li>
-        <li><a href="/">Главная</a></li>
-        <li><a href="company.html">Компания</a></li>
-        <li><a href="catalog.html">Каталог</a></li>
-        <li><a href="news.html">Новости</a></li>
-        <li><a href="spec.html">Спецпредложения</a></li>
-        <li><a href="delivery.html">Доставка</a></li>
-        <li><a href="contacts.html">Контакты</a></li>
+      <ul class="site-top-menu">
+        <li class="bookmarks"><a href="/bookmarks/">Закладки: 0</a></li>
+        <li class="cart"><a href="/cart/">Корзина: 10</a></li>
+        <li class="order"><a href="/order/">Оформить заказ</a></li>
       </ul>
     </div>
-  </nav>
+  </div>
+  <div class="main-navigation-wrapper">
+    <div class="page-header">
+      <p class="slogan">Интернет магазин строительных материалов и инструментов для ремонта</p>
+      <div class="contacts">
+        <div class="phone">+7 (812) 555-05-55</div>
+        <div class="address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</div>
+      </div>
+      <div class="block-user">
+        <a class="login" href="/login/">Войти</a>
+        <a class="registration" href="/registration/"> Регистрация</a>
+      </div>
+    </div>
+    <nav class="main-navigation">
+      <div class="main-navigation-inner">
+        <ul class="main-navigation-list">
+          <li><a href="/"><span class="home"></span></a></li>
+          <li><a href="/">Главная</a></li>
+          <li><a href="company.html">Компания</a></li>
+          <li><a href="catalog.html">Каталог</a></li>
+          <li><a href="news.html">Новости</a></li>
+          <li><a href="spec.html">Спецпредложения</a></li>
+          <li><a href="delivery.html">Доставка</a></li>
+          <li><a href="contacts.html">Контакты</a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
 </header>
 
 
@@ -81,29 +84,41 @@
   </section>
 
   <section class="advertising">
-    <ul class="advertising-list">
-      <li class="slider">
+    <div class="advertising-wrapper">
+      <div class="slider">
         <h3>Дрели</h3>
-        <p>Соседям на радость</p>
-        <div class="open-catalog">
-          <div></div>
+        <p>Соседям на радость!</p>
+        <div class="open-catalog button">
           <a href="catalog.html">Открыть каталог</a></div>
         <figure class="slider-content">
           <a href="#"><img src="img/slider/slider-1.jpg" width="620" height="266" alt="Фото 1"></a>
           <a class="hidden" href="#"><img src="img/slider/slider-2.jpg" width="620" height="266" alt="Фото 2"></a>
         </figure>
-        <button class="button slider-button-back" type="" aria-label="Предыдущее изображение"></button>
-        <button class="button slider-button-next" type="button" aria-label="Следующее узображение"></button>
-      </li>
-      <li class="advertising-item discount">
-        <h3>Скидки 50%</h3>
-        <a class="button" href="discount350.html">На 350 товаров</a>
-      </li>
-      <li class="advertising-item delivery">
-        <h3>Доставка</h3>
-        <a class="button" href="delivery.html">Бесплатно</a>
-      </li>
-    </ul>
+        <div class="slider-contol">
+          <div>
+          <button class="slider-button-back" type="button" aria-label="Предыдущее изображение">
+            <img src="img/svg-technomart/icon-left.svg">
+          </button>
+          </div>
+          <div>
+          <button class=" slider-button-next" type="button" aria-label="Следующее изображение">
+            <img src="img/svg-technomart/icon-right.svg">
+          </button>
+          </div>
+        </div>
+      </div>
+      <ul class="advertising-list">
+        <li class="advertising-item discount">
+          <h3>Скидки 50%</h3>
+          <a class="button" href="discount350.html">На 350 товаров</a>
+        </li>
+        <li class="advertising-item delivery">
+          <h3>Доставка</h3>
+          <a class="button" href="delivery.html">Бесплатно</a>
+        </li>
+      </ul>
+    </div>
+
   </section>
 
   <section class="popular-goods-all">
@@ -117,7 +132,7 @@
         <li class="item">
           <a href="catalog-item-1.html">
             <div class="item-img">
-              <img src="img/product/product-1.jpg" width="184" height="164" alt="Перфоратор BOSCH BFG 9000">
+              <img src="img/product/product-2.jpg" width="127" height="112" alt="Перфоратор BOSCH BFG 9000">
             </div>
             <h3>Перфоратор BOSCH BFG 9000</h3>
             <p>32500 Р.</p>
@@ -127,7 +142,7 @@
         <li class="item">
           <a href="catalog-item-2.html">
             <div class="item-img">
-              <img src="img/product/product-2.jpg" width="127" height="112" alt="Перфоратор BOSCH BFG 3000">
+              <img src="img/product/product-2.jpg" width="127" height="112" alt="Перфоратор BOSCH BFG 9000">
             </div>
             <h3>Перфоратор BOSCH BFG 3000</h3>
             <p>42500 Р.</p>
@@ -137,14 +152,14 @@
         <li class="item">
           <a href="catalog-item-3.html">
             <div class="item-img">
-              <img src="img/product/product-3.jpg" width="144" height="128" alt="Перфоратор BOSCH BFG 6000">
+              <img src="img/product/product-2.jpg" width="127" height="112" alt="Перфоратор BOSCH BFG 9000">
             </div>
             <h3>Перфоратор BOSCH BFG 6000</h3>
             <p>22500 Р.</p>
             <span class="current">12500 Р.</span>
           </a>
         </li>
-        <li class="item new">\
+        <li class="item new">
           <a href="catalog-item-4.html">
             <div class="item-img">
               <img src="img/product/product-2.jpg" width="127" height="112" alt="Перфоратор BOSCH BFG 9000">
@@ -281,7 +296,7 @@
   </section>
 </main>
 
-<footer class="footer-top">
+<footer class="footer-top container">
   <a class="footer-top-logo">
     <img src="http://placehold.it/220x45" width="220" height="45" alt="Логотип «Техномарт»">
   </a>
@@ -310,7 +325,7 @@
   </div>
 </footer>
 
-<footer class="footer-bottom">
+<footer class="footer-bottom container">
   <p class="footer-copyright">
     © 2010&mdash;2018 Компания «Техномарт»<br>
     Все права защищены
@@ -354,7 +369,7 @@
 
     <div class="form-text">
       <label for="callbackText">Текст письма:</label><br>
-      <textarea id="callbackText" cols="75"  rows="6" class="write-us-text"></textarea>
+      <textarea id="callbackText" cols="75" rows="6" class="write-us-text"></textarea>
     </div>
 
     <div class="modal-buttons">
