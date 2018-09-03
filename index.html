@@ -268,12 +268,12 @@
   <section class="about" aria-label="О компании">
     <div class="description">
       <h3>Компания «Техномарт»</h3>
-      <p>Настоящий мужской шоппинг начинается здесь! Огромны выбор товаров для ремонта и
+      <p>Настоящий мужской шоппинг начинается здесь! Огромны выбор товаров для ремонта и<br>
         строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.</p>
 
       <p>Мы можем помочь доставить ваш товар в самые отделённые точки России!<br>
         Техномарт работает со многими транспортными компаниями:</p>
-      <ul class='transport-list'>
+      <ul class="transport-list">
         <li>Деловые линии</li>
         <li>Автотрейдинг</li>
         <li>ЖелДорЭкспедиция</li>
@@ -283,103 +283,82 @@
     </div>
     <div class="contacts">
       <h3 class="contact-title">Контакты</h3>
-      <p class="contact-description">Вы можете забрать товар сами,<br> заехав в наш офисе:
+      <p class="contact-description">Вы можете забрать товар сами,<br> заехав в наш офис:
+      </p>
+      <p>
         <img src="img/minimap.png" width="300" height="158"
              alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
         <!-- Google map -->
       </p>
       <a class="button feedback" href="feedback.html">Заблудились? Напишите нам!</a>
     </div>
-
-    <div class="big-map">
+    <div class="big-map hidden">
       <h2 class="visually-hidden">Как до нас добраться</h2>
-      <button type="button" class="modal-close" aria-label="Закрыть карту"></button>
+      <button type="button" class="modal-close hidden" aria-label="Закрыть карту"></button>
       <!-- Google map -->
     </div>
   </section>
+
 </main>
 
-<footer class="footer-top container">
-  <a class="footer-top-logo">
-    <img src="http://placehold.it/220x45" width="220" height="45" alt="Логотип «Техномарт»">
-  </a>
-  <p class="footer-top-contacts">
-    Адрес: г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
-    Телефон: +7 (812) 555-05-55
-  </p>
-  <div class="footer-top-menu">
-    <div class="footer-menu-main">
-      <ul class="list white">
-        <li><a href="#">Компания</a></li>
-        <li><a href="#">Новости</a></li>
-        <li><a href="#">Каталог</a></li>
-        <li><a href="#">Доставка</a></li>
-        <li><a href="#">Контакты</a></li>
-      </ul>
+<footer class="footer-top-wrapper">
+  <div class="footer-top container">
+    <div>
+      <a class="footer-top-logo">
+        <img src="img/logo-bottom.png" width="138" height="21" alt="«Техномарт»">
+      </a>
+      <p class="footer-top-contacts">
+        г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
+        Телефон: +7 (812) 555-05-55
+      </p>
     </div>
-    <div class="footer-menu-catalog">
-      <ul class="list yellow">
-        <li><a href="#">Материалы</a></li>
-        <li><a href="#">Техника</a></li>
-        <li><a href="#">Инструмент</a></li>
-        <li><a href="#">Спецпредложения</a></li>
+    <div class="footer-top-menu">
+      <div class="footer-menu-main">
+        <ul class="list white">
+          <li><a href="#">Компания</a></li>
+          <li><a href="#">Новости</a></li>
+          <li><a href="#">Каталог</a></li>
+          <li><a href="#">Доставка</a></li>
+          <li><a href="#">Контакты</a></li>
+        </ul>
+      </div>
+      <div class="footer-menu-catalog">
+        <ul class="list yellow">
+          <li><a href="#">Материалы</a></li>
+          <li><a href="#">Техника</a></li>
+          <li><a href="#">Инструмент</a></li>
+          <li><a href="#">Спецпредложения</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<footer class="footer-bottom-wrapper">
+  <div class="footer-bottom container">
+    <p class="footer-copyright">
+      © 2010&mdash;2018 Компания «Техномарт»<br>
+      Все права защищены
+    </p>
+    <div class="footer-social">
+      <a class="vk" href="http://vk.com" aria-label="Наша группа вКонтакте"></a>
+      <a class="fb" href="http://fb.com" aria-label="Наш фейсбук"></a>
+      <a class="instagram" href="http://instagram.com" aria-label="Наш инстаграм"></a>
+    </div>
+    <div class="footer-connect">
+      <ul>
+        <li>Обратная связь:<br>
+          <a href="mailto:mail@htmlacademy.ru" aria-label="Электропочта">mail@htmlacademy.ru</a>
+        </li>
+        <li>Разработано &mdash;<br>
+          <a href="https://htmlacademy.ru/intensive/htmlcss"
+             aria-label="Сайт разработан в htmlacademy.ru">htmlacademy.ru</a>
+        </li>
       </ul>
     </div>
   </div>
 </footer>
 
-<footer class="footer-bottom container">
-  <p class="footer-copyright">
-    © 2010&mdash;2018 Компания «Техномарт»<br>
-    Все права защищены
-  </p>
-
-  <div class="footer-social">
-    <a class="vk" href="http://vk.com" aria-label="Наша группа вКонтакте"></a>
-    <a class="fb" href="http://fb.com" aria-label="Наш фейсбук"></a>
-    <a class="instagram" href="http://instagram.com" aria-label="Наш инстаграм"></a>
-  </div>
-  <div class="footer-connect">
-    <ul>
-      <li>Обратная связь: <a href="mailto:mail@htmlacademy.ru" aria-label="Электропочта">mail@htmlacademy.ru</a></li>
-      <li>Разработано &mdash; <a href="https://htmlacademy.ru/intensive/htmlcss"
-                                 aria-label="Сайт разработан в htmlacademy.ru">htmlacademy.ru</a></li>
-    </ul>
-  </div>
-</footer>
-
-<div class="modal modal-product-add">
-  <button type="button" class="modal-close" aria-label="Закрыть форму"></button>
-  <div class="modal-buttons">
-    <a class="button order" href="/order/">Оформить заказ</a>
-    <a class="button continue" href="#close">Продолжить покупки</a>
-  </div>
-</div>
-
-<div class="modal modal-write-us">
-  <button type="button" class="modal-close" aria-label="Закрыть форму"></button>
-
-  <form class="modal-write-us-form" action="/writeus/" method="post">
-    <div class="form-input write-us-name">
-      <label for="callbackName">Ваше Имя:</label><br>
-      <input type="text" id="callbackName" name="name" placeholder="Имя Фамилия">
-    </div>
-
-    <div class="form-input write-us-email">
-      <label for="callbackName">Ваш e-mail:</label><br>
-      <input type="text" id="callbackEmail" name="name" placeholder="mail@example.com ">
-    </div>
-
-    <div class="form-text">
-      <label for="callbackText">Текст письма:</label><br>
-      <textarea id="callbackText" cols="75" rows="6" class="write-us-text"></textarea>
-    </div>
-
-    <div class="modal-buttons">
-      <button type="submit" class="button write-us-send">Отправить</button>
-    </div>
-  </form>
-</div>
 
 </body>
 </html>
