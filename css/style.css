@@ -143,10 +143,25 @@ input[type="radio"].visually-hidden {
   height: 42px;
 }
 
+.site-top-search .lens {
+  width: 49px;
+  background-image: url("../img/svg-technomart/icon-search.svg");
+  background-repeat: no-repeat;
+  background-position: center 12px;
+  opacity: 0.3;
+}
+
+.site-top-search:hover .lens {
+  opacity: 1;
+}
+
+.site-top-search .lens:active {
+  opacity: 0.5;
+}
+
 .site-top-search .title {
   width: 45px;
   margin-top: 12px;
-  padding-left: 49px;
 }
 
 .site-top-search input[type="text"] {
@@ -169,12 +184,47 @@ input[type="radio"].visually-hidden {
   background-color: white;
 }
 
-.site-top-search {
+.site-top-search input[type="text"]:focus {
+  color: black;
+  border: 0;
+  background-color: white;
+}
 
+.site-top-search:focus-within {
+  color: black;
+  background-color: white;
+  border: 1px solid white;
+}
+
+.site-top-search:focus-within .lens {
+  background-image: url("../img/svg-technomart/icon-search-red.svg");
+  opacity: 1;
+}
+
+.site-top-search:focus-within .title {
+  display: none;
+}
+
+.site-top-search {
   display: flex;
+  width: 270px;
+  justify-content: flex-start;
   list-style: none;
   margin-left: 0;
   margin-right: 25px;
+}
+
+.site-top-menu li.bookmarks {
+  background-image: url("../img/svg-technomart/icon-bookmark.svg");
+  background-repeat: no-repeat;
+  background-position: 13px 16px;
+  opacity: 0.3;
+}
+
+.site-top-menu li.cart {
+  background-image: url("../img/svg-technomart/icon-cart.svg");
+  background-repeat: no-repeat;
+  background-position: 13px 16px;
 }
 
 .site-top-menu ul {
@@ -255,12 +305,20 @@ ul.site-top-menu {
   font-size: 21px;
   color: #ee3643;
   border: 3px solid white;
+
+  background-image: url("../img/svg-technomart/icon-phone.svg");
+  background-repeat: no-repeat;
+  background-position: 13px 14px;
 }
 
 .page-header .address {
   font-size: 14px;
   line-height: 23px;
   color: #32425c;
+}
+
+.block-user {
+  position: relative;
 }
 
 .page-header .block-user a {
@@ -276,10 +334,54 @@ ul.site-top-menu {
 .block-user a.login {
   padding-left: 49px;
   margin-right: 10px;
+
+}
+
+.block-user a.login::before {
+  content: "";
+  background: url("../img/svg-technomart/icon-login.svg");
+  opacity: 0.5;
+  top: 4px;
+  left: 16px;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: 2;
+  background-repeat: no-repeat;
+}
+
+.block-user a.login:hover::before {
+  content: "";
+  background: url("../img/svg-technomart/icon-login-blue.svg");
+  opacity: 1;
+  top: 4px;
+  left: 16px;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: 2;
+  background-repeat: no-repeat;
+}
+
+.block-user:active a.login::before {
+  content: "";
+  background: url("../img/svg-technomart/icon-login.svg");
+  opacity: 0.2;
+  top: 4px;
+  left: 16px;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: 2;
+  background-repeat: no-repeat;
 }
 
 .block-user a:hover {
   color: #ee3643;
+}
+
+.block-user a.login:active {
+  color: #cacaca;
 }
 
 .block-user a:active {
@@ -287,10 +389,102 @@ ul.site-top-menu {
 }
 
 .block-user .user-name {
+  position: relative;
   font-size: 21px;
   color: black;
   padding: 10px;
   background-color: white;
+  padding-left: 45px;
+}
+
+.block-user .name ul {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.block-user .user-name::before {
+  content: "";
+  background: url("../img/svg-technomart/icon-user.svg");
+  opacity: 0.2;
+  top: 13px;
+  left: 13px;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: 2;
+  background-repeat: no-repeat;
+}
+
+.block-user .user-name:hover::before {
+  content: "";
+  background: url("../img/svg-technomart/icon-user-blue.svg");
+  opacity: 1;
+  top: 13px;
+  left: 13px;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: 2;
+  background-repeat: no-repeat;
+}
+
+.block-user:active .user-name::before {
+  content: "";
+  background: url("../img/svg-technomart/icon-user-blue.svg");
+  opacity: 0.3;
+  top: 13px;
+  left: 13px;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: 2;
+  background-repeat: no-repeat;
+}
+
+.block-user .exit {
+  position: relative;
+  background-color: white;
+
+  width: 40px;
+}
+
+.block-user .user-exit::before {
+  content: "";
+  background: url("../img/svg-technomart/icon-logout.svg");
+  opacity: 1;
+  top: 14px;
+  left: 9px;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: 2;
+  background-repeat: no-repeat;
+}
+
+.block-user .user-exit:hover::before {
+  content: "";
+  background: url("../img/svg-technomart/icon-logout-blue.svg");
+  opacity: 1;
+  top: 14px;
+  left: 9px;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: 2;
+  background-repeat: no-repeat;
+}
+
+.block-user .user-exit:active::before {
+  content: "";
+  background: url("../img/svg-technomart/icon-logout-blue.svg");
+  opacity: 0.5;
+  top: 14px;
+  left: 9px;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: 2;
+  background-repeat: no-repeat;
 }
 
 .block-user .user-name:active {
@@ -324,8 +518,14 @@ ul.site-top-menu {
   align-items: start;
 }
 
-.block-user .profile li {
+.block-user .profile li:first-child {
   list-style: none;
+  margin-right: 5px;
+}
+
+.block-user .profile li {
+  margin-left: 15px;
+  color: #32425c;
 }
 
 .main-navigation-inner {
@@ -337,16 +537,21 @@ ul.site-top-menu {
   justify-content: space-between;
 }
 
-ul.main-navigation-list {
-  margin-left: -50px;
+.main-navigation-inner ul {
+  margin: 0;
+  padding: 0;
+  padding-left: 25px;
 }
 
 .main-navigation .main-navigation-list a {
   font-size: 17px;
+  line-height: 55px;
 }
 
 .main-navigation .main-navigation-list li {
   list-style: none;
+  padding-left: 25px;
+  padding-right: 25px;
 }
 
 .main-navigation .main-navigation-list li:hover {
@@ -530,9 +735,13 @@ button.slider-button-next {
   flex-wrap: wrap;
 }
 
+.catalog-items ul {
+  margin: 0;
+  padding: 0;
+}
+
 .catalog-items .list {
   display: flex;
-  margin-left: -50px;
 }
 
 .catalog-items .item:nth-child(4) {
@@ -547,6 +756,10 @@ button.slider-button-next {
   align-items: flex-start;
   text-align: center;
   padding: 20px 10px;
+}
+
+.catalog-items .list li:first-child {
+  margin-left: 0px;
 }
 
 .catalog-page .catalog-items .list li {
@@ -667,36 +880,100 @@ button.slider-button-next {
 }
 
 li.catalog-item.material {
+  position: relative;
   background-color: #ffbf47;
 }
 
+li.catalog-item.material::before {
+  content: "";
+  background: url("../img/svg-technomart/icon-1.svg");
+  opacity: 1;
+  top: 31px;
+  left: 213px;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: 2;
+  background-repeat: no-repeat;
+}
+
 li.catalog-item.tool {
+  position: relative;
   background-color: #3bbce3;
 }
 
+li.catalog-item.tool::before {
+  content: "";
+  background: url("../img/svg-technomart/icon-2.svg");
+  opacity: 1;
+  top: 31px;
+  left: 213px;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: 2;
+  background-repeat: no-repeat;
+}
+
 li.catalog-item.technique {
+  position: relative;
   background-color: #dc91d8;
 }
-
+li.catalog-item.technique::before {
+  content: "";
+  background: url("../img/svg-technomart/icon-3.svg");
+  opacity: 1;
+  top: 31px;
+  left: 191px;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: 2;
+  background-repeat: no-repeat;
+}
 li.advertising-item.discount {
+  position: relative;
   background-color: #8ed78f;
 }
-
+li.advertising-item.discount::before {
+  content: "";
+  background: url("../img/svg-technomart/icon-4.svg");
+  opacity: 1;
+  top: 31px;
+  left: 196px;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: 2;
+  background-repeat: no-repeat;
+}
 li.advertising-item.delivery {
+  position: relative;
   background-color: #ffc047;
 }
-
+li.advertising-item.delivery::before {
+  content: "";
+  background: url("../img/svg-technomart/icon-5.svg");
+  opacity: 1;
+  top: 31px;
+  left: 191px;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: 2;
+  background-repeat: no-repeat;
+}
 .popular-manufacturers {
-
   background-color: #f9f5f0;
   display: flex;
+  justify-content: space-between;
+  align-items: center;
   width: 100%;
   height: 90px;
 }
 
 .popular-manufacturers .title {
   width: 400px;
-  height: 200px;
   margin-left: 30px;
 }
 
@@ -706,7 +983,6 @@ li.advertising-item.delivery {
   padding-top: 10px;
   padding-bottom: 10px;
   vertical-align: middle;
-  height: 18px;
   width: 253px;
   text-align: center;
   text-transform: uppercase;
@@ -781,7 +1057,7 @@ li.advertising-item.delivery {
   color: white;
   background-color: #32425c;
   border-bottom: 1px solid gray;
-
+  cursor: pointer;
 }
 
 .service-list li.service-item.selected {
@@ -1084,9 +1360,11 @@ p.footer-top-contacts {
   text-transform: uppercase;
   margin-right: 20px;
 }
+
 .filter hr {
   color: #e5e5e5;
 }
+
 .filter .filter-text {
   font-size: 13px;
   line-height: 18px;
@@ -1148,11 +1426,13 @@ p.footer-top-contacts {
   font-size: 17px;
   line-height: 30px;
 }
-ul.filter-items  {
+
+ul.filter-items {
   margin: 0;
   padding: 0;
 
 }
+
 .filter-items li {
   margin: 0;
   padding: 0;
@@ -1181,6 +1461,7 @@ ul.filter-items  {
   border: 1px solid gray;
   width: 140px;
   margin-top: 70px;
+  cursor: pointer;
 }
 
 .sorting {
@@ -1259,11 +1540,6 @@ ul.filter-items  {
   padding-bottom: 10px;
   margin: 5px;
   border: 1px solid lightgray;
-}
-
-.catalog-paginator li:last-child {
-  padding-left: 30px;
-  padding-right: 30px;;
 }
 
 .catalog-paginator li:hover {
@@ -1349,21 +1625,33 @@ ul.filter-items  {
   flex-wrap: wrap;
 }
 
+.popular-manufacturers-list ul {
+  margin: 0;
+  padding: 0;
+}
+
 .popular-manufacturers-list ul.list {
   margin: 0;
-  margin-left: -50px;
 }
 
 .popular-manufacturers-list .item {
-  display: block;
   width: 198px;
   border: 1px solid gray;
   margin: 10px;
+  margin-right: 10px;
   padding: 10px;
   justify-content: space-between;
   align-items: flex-start;
   text-align: center;
   vertical-align: middle;
+}
+
+.popular-manufacturers-list .item:first-child {
+  margin-left: 0;
+}
+
+.popular-manufacturers-list .item:nth-child(5n) {
+  margin-left: 0;
 }
 
 .popular-manufacturers-list .item:nth-child(4n) {

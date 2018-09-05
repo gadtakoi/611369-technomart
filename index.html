@@ -17,6 +17,7 @@
         <img src="img/logo.png" width="110" height="18" alt="«Техномарт»">
       </a>
       <div class="site-top-search">
+        <div class="lens"></div>
         <div class="title">Поиск:</div>
         <div class="form">
           <form class="header-search-form" action="/search/" method="get">
@@ -46,7 +47,6 @@
     <nav class="main-navigation">
       <div class="main-navigation-inner">
         <ul class="main-navigation-list">
-          <li><a href="/"><span class="home"></span></a></li>
           <li><a href="/">Главная</a></li>
           <li><a href="company.html">Компания</a></li>
           <li><a href="catalog.html">Каталог</a></li>
@@ -88,8 +88,9 @@
       <div class="slider">
         <h3>Дрели</h3>
         <p>Соседям на радость!</p>
-        <div class="open-catalog button">
-          <a href="catalog.html">Открыть каталог</a></div>
+        <a href="catalog.html"><span class="open-catalog button">
+          Открыть каталог</span>
+        </a>
         <figure class="slider-content">
           <a href="#"><img src="img/slider/slider-1.jpg" width="620" height="266" alt="Фото 1"></a>
           <a class="hidden" href="#"><img src="img/slider/slider-2.jpg" width="620" height="266" alt="Фото 2"></a>
@@ -97,12 +98,12 @@
         <div class="slider-contol">
           <div>
             <button class="slider-button-back" type="button" aria-label="Предыдущее изображение">
-              <img src="img/svg-technomart/icon-left.svg">
+              <img src="img/svg-technomart/icon-left.svg" alt="Предыдущее изображение">
             </button>
           </div>
           <div>
             <button class=" slider-button-next" type="button" aria-label="Следующее изображение">
-              <img src="img/svg-technomart/icon-right.svg">
+              <img src="img/svg-technomart/icon-right.svg" alt="Следующее изображение">
             </button>
           </div>
         </div>
@@ -122,7 +123,7 @@
 
   <section class="popular-goods-all">
     <div class="popular-goods"><h3>Популярные товары</h3></div>
-    <div class="all-goods button"><a href="popular.html">все популярные товары</a></div>
+    <a href="popular.html"><span class="all-goods button">все популярные товары</span></a>
   </section>
 
   <section class="catalog" aria-label="Каталог товаров">
@@ -174,7 +175,9 @@
 
   <section class="popular-manufacturers">
     <div class="title"><h3>Полулярные производители</h3></div>
-    <div class="link"><a href="popular.html">все производители</a></div>
+    <a href="popular.html">
+      <div class="link">все производители</div>
+    </a>
   </section>
 
   <section class="popular-manufacturers-list">
