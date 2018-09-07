@@ -1316,7 +1316,7 @@ li.advertising-item.delivery::before {
   top: -47px;
   width: 10px;
   height: 275px;
-  background: url("../img/vertical3.png") no-repeat;
+  background: url("../img/vertical.png") no-repeat;
 }
 
 ul.service-list {
@@ -1396,7 +1396,9 @@ p.service-item-description {
   line-height: 24px;
   margin-bottom: 34px;
 }
-
+.service-list .service-item a {
+  display: block;
+}
 .about {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1520,7 +1522,7 @@ p.service-item-description {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  cursor: pointer;
+  //cursor: pointer;
   position: relative;
   margin-bottom: 35px;
 }
@@ -2331,6 +2333,50 @@ ul.filter-items {
 
 .modal-show {
   display: block;
+  animation: bounce 1.6s;
+}
+.modal-error {
+  animation: shake 0.6s;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(-2000px);
+  }
+
+  70% {
+    transform: translateY(30px);
+  }
+
+  90% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
+  }
 }
 
 .modal-product-add {

@@ -3,13 +3,37 @@ document.addEventListener('DOMContentLoaded', function () {
     var feedback = document.querySelector('.feedback');
     var writeus = document.querySelector('.modal-write-us');
     var close = writeus.querySelector('.modal-close');
+    var name = writeus.querySelector("[name=name]");
+    var comment = writeus.querySelector("[name=comment]");
+
     feedback.addEventListener("click", function (evt) {
       evt.preventDefault();
       writeus.classList.add('modal-show');
+      name.focus();
     });
     close.addEventListener("click", function (evt) {
       evt.preventDefault();
       writeus.classList.remove('modal-show');
+      writeus.classList.remove("modal-error");
+
+    });
+
+    writeus.addEventListener("submit", function (evt) {
+      if (!name.value || !comment.value) {
+        evt.preventDefault();
+        writeus.classList.remove("modal-error");
+        writeus.classList.add("modal-error");
+      }
+    });
+
+    window.addEventListener("keydown", function (evt) {
+      if (evt.Code === 27) {
+        evt.preventDefault();
+        if (writeus.classList.contains("modal-show")) {
+          writeus.classList.remove("modal-show");
+          writeus.classList.remove("modal-error");
+        }
+      }
     });
   } catch (e) {
 
