@@ -1127,7 +1127,7 @@ li.advertising-item.delivery::before {
 }
 
 .service {
-  width: 940px;
+  width: 918px;
   color: black;
   background-color: #f4f8f9;
   position: relative;
@@ -1257,6 +1257,7 @@ p.service-item-description {
   padding: 0;
   padding-top: 80px;
   color: black;
+  position: relative;
 }
 
 .about .description h3 {
@@ -1281,9 +1282,9 @@ p.service-item-description {
 .about .description .transport-list li {
   font-size: 18px;
   line-height: 20px;
-  margin-bottom: 25px;
+  margin-bottom: 14px;
   background: url(../img/red-line.png) no-repeat left;
-  padding: 3px 0px 3px 36px;
+  padding: 3px 0px 4px 36px;
   list-style: none;
 }
 
@@ -2085,19 +2086,81 @@ ul.filter-items {
   display: block;
 }
 
-.modal-write-us {
+.modal-product-add {
   top: 120px;
   left: 50%;
-  width: 622px;
+  width: 620px;
+  min-height: 283px;
   color: black;
   margin-left: -311px;
   border-top: 5px solid red;
   box-shadow: 0 0 35px rgba(122, 122, 122, 0.5);
   background-color: white;
+  font-size: 13px;
+  font-family: "Cuprum", Arial, sans-serif;
+  z-index: 25;
+}
+
+.modal-product-add p {
+  padding-top: 45px;
+  padding-bottom: 45px;
+  font-size: 30px;
+  text-align: center;
+}
+
+.modal-product-add p {
+  background-image: url("../img/svg-technomart/form-1.svg");
+  background-repeat: no-repeat;
+  background-position: 80px 30px;
+  padding-left: 40px;
+}
+
+.modal-product-add .modal-buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f1f1f1;
+  min-height: 113px;
+  padding-left: 80px;
+  padding-right: 80px;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.modal-product-add .modal-buttons .order {
+  width: 220px;
+}
+
+.modal-product-add .modal-buttons .continue {
+  width: 220px;
+
+  background-color: white;
+  color: black;
+}
+
+.modal-write-us {
+  top: 120px;
+  left: 50%;
+  width: 622px;
+  min-height: 430px;
+  color: black;
+  margin-left: -311px;
+  border-top: 5px solid red;
+  box-shadow: 0 0 35px rgba(122, 122, 122, 0.5);
+  background-color: white;
+  font-size: 13px;
+  font-family: "PT Sans", Arial, sans-serif;
+}
+
+.modal-write-us p {
+  margin-bottom: 12px;
+  font-size: 18px;
+  font-family: "Cuprum", Arial, sans-serif;
+
 }
 
 .modal-write-us .form-input, .modal-write-us .form-text {
-  margin: 30px;
+  /*margin: 30px;*/
 }
 
 .modal-write-us .modal-buttons {
@@ -2135,8 +2198,8 @@ ul.filter-items {
   content: "";
 
   position: absolute;
-  top: 10px;
-  left: -35px;
+  top: 16px;
+  left: -38px;
 
   width: 19px;
   height: 3px;
@@ -2150,4 +2213,69 @@ ul.filter-items {
 
 .modal-close::after {
   transform: rotate(-45deg);
+}
+
+.modal-fields {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 80px;
+  margin-right: 80px;
+}
+
+.modal-fields .form-input {
+  margin-top: 56px;
+}
+
+.modal-write-us .form-comment {
+  margin-top: 24px;
+  margin-bottom: 36px;
+  margin-left: 80px;
+  margin-right: 80px;
+}
+
+.modal-write-us input[type="text"],
+.modal-write-us textarea {
+  box-sizing: border-box;
+  border: 2px solid #dee3e4;
+  border-radius: 2px;
+
+}
+
+.modal-write-us input[type="text"] {
+  box-sizing: border-box;
+  width: 218px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 12px;
+}
+
+.modal-write-us textarea {
+  box-sizing: border-box;
+  width: 462px;
+  height: 110px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 12px;
+}
+
+.footer-map {
+  cursor: pointer;
+}
+
+.modal-map {
+  background-color: white;
+  /*display: none;*/
+  width: 940px;
+  height: 446px;
+  z-index: 20;
+  position: absolute;
+  border: 0;
+  top: 50px;
+}
+
+.about .modal-close::before,
+.about .modal-close::after {
+  top: 5px;
+  left: -0px;
 }

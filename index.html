@@ -264,7 +264,7 @@
         <li class="service-item"><label for="service-item-1">Доставка</label></li>
         <li class="service-item"><label for="service-item-2">Гарантия </label></li>
         <li class="service-item"><label for="service-item-3">Кредит</label></li>
-       </ul>
+      </ul>
       <div class="service-info">
         <div class="service-show">
           <h3 class="service-item-title">Доставка</h3>
@@ -320,16 +320,15 @@
       <p class="contact-description">Вы можете забрать товар сами,<br> заехав в наш офис:
       </p>
       <p>
-        <img src="img/minimap.png" width="300" height="158"
+        <img class="footer-map" src="img/minimap.png" width="300" height="158"
              alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
         <!-- Google map -->
       </p>
       <a class="button feedback" href="feedback.html">Заблудились? Напишите нам!</a>
     </div>
-    <div class="big-map hidden">
-      <h2 class="visually-hidden">Как до нас добраться</h2>
-      <button type="button" class="modal-close hidden" aria-label="Закрыть карту"></button>
-      <!-- Google map -->
+    <div class="modal modal-map">
+      <a href="#close" class="modal-close"></a>
+      <iframe src="https://yandex.ru/map-widget/v1/-/CBBaeBtC3B" width="940" height="446" frameborder="1" allowfullscreen="true"></iframe>
     </div>
   </section>
 
@@ -416,39 +415,30 @@
   </div>
 </footer>
 
-
-<div class="modal modal-product-add">
-  <a href="#close" class="modal-close"></a>
-  <div class="modal-buttons">
-    <a class="button order" href="/order/">Оформить заказ</a>
-    <a class="button continue" href="#close">Продолжить покупки</a>
-  </div>
-</div>
-
 <div class="modal modal-write-us">
   <a href="#close" class="modal-close"></a>
 
   <form class="modal-write-us-form" action="/writeus/" method="post">
-    <div class="form-input write-us-name">
-      <label for="callbackName">Ваше Имя:</label>
-      <input type="text" id="callbackName" name="name" placeholder="Имя Фамилия">
-    </div>
+    <div class="modal-fields">
+      <div class="form-input write-us-name">
+        <p>Ваше Имя:</p>
+        <input type="text" id="callbackName" name="name" placeholder="Имя Фамилия">
+      </div>
 
-    <div class="form-input write-us-email">
-      <label for="callbackName">Ваш e-mail:</label>
-      <input type="text" id="callbackEmail" name="name" placeholder="mail@example.com ">
+      <div class="form-input write-us-email">
+        <p>Ваш e-mail:</p>
+        <input type="text" id="callbackEmail" name="name" placeholder="mail@example.com">
+      </div>
     </div>
-
-    <div class="form-control">
-      <label for="callbackText">Ваш e-mail:</label>
-      <textarea id="callbackText" class="write-us-text"></textarea>
+    <div class="form-comment">
+      <p>Текст письма:</p>
+      <textarea id="callbackText" class="write-us-text" placeholder="в свободной форме"></textarea>
     </div>
 
     <div class="modal-buttons">
-      <button class="write-us-send">Отправить</button>
+      <button class="button write-us-send">Отправить</button>
     </div>
   </form>
-
 </div>
 
 </body>
