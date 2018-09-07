@@ -1901,6 +1901,9 @@ p.footer-top-contacts {
 .filter-item input[type="checkbox"] + .checkbox-indicator:active {
   opacity: 0.2;
 }
+.filter-item input[type="checkbox"]:disabled + .checkbox-indicator {
+  opacity: 0.1;
+}
 
 .filter-item input[type="checkbox"]:checked + .checkbox-indicator {
   background: url("../img/svg-technomart/checkbox-on.svg");
@@ -1918,6 +1921,9 @@ p.footer-top-contacts {
 }
 .filter-item input[type="checkbox"]:checked + .checkbox-indicator:active {
   opacity: 0.2;
+}
+.filter-item input[type="checkbox"]:checked:disabled + .checkbox-indicator {
+  opacity: 0.1;
 }
 
 .filter-item input[type="checkbox"]:hover {
@@ -1940,6 +1946,9 @@ p.footer-top-contacts {
 }
 .filter-item input[type="radio"] + .radio-indicator:active {
   opacity: 0.2;
+}
+.filter-item input[type="radio"]:disabled + .radio-indicator:active {
+  opacity: 0.1;
 }
 
 .filter-item input[type="radio"]:focus + .radio-indicator {
@@ -1964,6 +1973,9 @@ p.footer-top-contacts {
 }
 .filter-item input[type="radio"]:checked + .radio-indicator:active {
   opacity: 0.2;
+}
+.filter-item input[type="radio"]:checked:disabled + .radio-indicator {
+  opacity: 0.1;
 }
 
 ul.filter-items {
