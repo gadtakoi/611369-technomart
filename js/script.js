@@ -19,15 +19,18 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
     writeus.addEventListener("submit", function (evt) {
-      if (!name.value || !comment.value) {
+      if (!name.value && !comment.value) {
         evt.preventDefault();
         writeus.classList.remove("modal-error");
+        writeus.offsetWidth = writeus.offsetWidth;
         writeus.classList.add("modal-error");
+      } else {
+        writeus.classList.remove("modal-error");
       }
     });
 
     window.addEventListener("keydown", function (evt) {
-      if (evt.Code === 27) {
+      if (evt.keyCode === 27) {
         evt.preventDefault();
         if (writeus.classList.contains("modal-show")) {
           writeus.classList.remove("modal-show");
@@ -39,11 +42,11 @@ document.addEventListener('DOMContentLoaded', function () {
 
   }
   try {
-
+    var bigmap = document.querySelector('.big-map');
     var footermap = document.querySelector('.footer-map');
     var map = document.querySelector('.modal-map');
     var mapclose = map.querySelector('.about .modal-close');
-
+    bigmap.style.display =  'none'
     footermap.addEventListener("click", function (evt) {
       evt.preventDefault();
       map.classList.add('modal-show');
