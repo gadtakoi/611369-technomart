@@ -34,14 +34,16 @@ document.addEventListener('DOMContentLoaded', function () {
   }
   try {
 
-    var buy = document.querySelector('.buy');
+    var buy = document.querySelectorAll('.buy');
     var productadd = document.querySelector('.modal-product-add');
     var productclose = productadd.querySelector('.modal-product-add .modal-close');
-
-    buy.addEventListener("click", function (evt) {
-      evt.preventDefault();
-      productadd.classList.add('modal-show');
+    buy.forEach(function (b) {
+      b.addEventListener("click", function (evt) {
+        evt.preventDefault();
+        productadd.classList.add('modal-show');
+      });
     });
+
     productclose.addEventListener("click", function (evt) {
       evt.preventDefault();
       productadd.classList.remove('modal-show');
