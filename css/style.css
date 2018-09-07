@@ -1208,9 +1208,9 @@ ul.service-list {
   display: block;
 }
 
-#service-item-1:checked ~ .service-list label:nth-child(1) li.service-item,
-#service-item-2:checked ~ .service-list label:nth-child(2) li.service-item,
-#service-item-3:checked ~ .service-list label:nth-child(3) li.service-item {
+#service-item-1:checked ~ .service-list li.service-item:nth-child(1),
+#service-item-2:checked ~ .service-list li.service-item:nth-child(2),
+#service-item-3:checked ~ .service-list li.service-item:nth-child(3) {
   color: #32425c;
   background-color: white;
 }
