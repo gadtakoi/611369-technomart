@@ -1487,6 +1487,7 @@ p.service-item-description {
 
 .service-list .service-item a {
   display: block;
+  cursor: pointer;
 }
 
 .about {
