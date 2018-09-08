@@ -2630,31 +2630,24 @@ ul.filter-items {
 
 .modal-close {
   position: absolute;
-  top: 0;
-  right: -34px;
-
+  top: -1px;
+  right: 0px;
   width: 22px;
   height: 22px;
-
   font-size: 0;
-
   background-color: transparent;
   border: 0;
-
   cursor: pointer;
 }
 
 .modal-close::before,
 .modal-close::after {
   content: "";
-
   position: absolute;
-  top: 16px;
-  left: -38px;
-
+  top: 14px;
+  left: 0px;
   width: 19px;
   height: 3px;
-
   background-color: #ee3643;
 }
 
@@ -2735,13 +2728,13 @@ ul.filter-items {
   z-index: 20;
   position: absolute;
   border: 0;
-  top: 50px;
+  top: 33px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);;
 
 }
 
 .about .modal-close::before,
 .about .modal-close::after {
-  top: 16px;
-  left: -36px;
+  top: 13px;
+  left: 1px;
 }
