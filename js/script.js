@@ -46,7 +46,7 @@ document.addEventListener('DOMContentLoaded', function () {
     var footermap = document.querySelector('.footer-map');
     var map = document.querySelector('.modal-map');
     var mapclose = map.querySelector('.about .modal-close');
-    bigmap.style.display =  'none'
+    bigmap.style.display =  'none';
     footermap.addEventListener("click", function (evt) {
       evt.preventDefault();
       map.classList.add('modal-show');
