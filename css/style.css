@@ -31,11 +31,11 @@ input[type="radio"].visually-hidden {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-.clearfix {
-  content: "";
-  display: table;
-  clear: both
-}
+.clearfix::after {
+   content: '';
+   display: table;
+   clear: both
+ }
 .button {
   background-color: #ee3643;
   padding-top: 10px;
@@ -698,9 +698,9 @@ img.slider-button-back, img.slider-button-next {
   justify-content: space-between;
   vertical-align: middle;
   background-color: #f9f5f0;
-  height: 90px;
+  min-height: 90px;
   width: 100%;
-  margin-top: 31px;
+  margin-top: 28px;
 }
 .popular-goods-all h3 {
   font-size: 30px;
@@ -735,9 +735,8 @@ img.slider-button-back, img.slider-button-next {
   padding-bottom: 30px;
 }
 .catalog-items {
-  /*width: 700px;*/
-  margin: 20px auto;
-  margin-bottom: 0px;
+  margin: 18px auto;
+  margin-bottom: 0;
 }
 .catalog-items .product {
   position: relative;
@@ -1122,16 +1121,16 @@ li.advertising-item.delivery::before {
   -ms-flex-align: center;
   align-items: center;
   width: 100%;
-  height: 90px;
+  min-height: 90px;
 }
 .popular-manufacturers .title {
   width: 400px;
-  margin-left: 24px;
   font-weight: normal;
-  margin-top: 31px;
+  margin-top: 28px;
+  margin-left: 25px;
 }
 .popular-manufacturers .link {
-  margin: auto 25px auto auto;
+  margin: -4px 23px auto auto;
   background-color: #ee3643;
   padding-top: 10px;
   padding-bottom: 10px;
@@ -1166,7 +1165,7 @@ li.advertising-item.delivery::before {
   -ms-flex-direction: column;
   flex-direction: column;
   background-color: #f3f7f8;
-  padding-bottom: 62px;
+  padding-bottom: 23px;
 }
 .service {
   width: 937px;
@@ -1175,7 +1174,7 @@ li.advertising-item.delivery::before {
   position: relative;
 }
 .service .description {
-  margin-bottom: 70px;
+  margin-bottom: 71px;
   margin-left: 10px;
 }
 .service .description h3 {
@@ -1194,18 +1193,22 @@ li.advertising-item.delivery::before {
   width: 415px;
 }
 .service-block {
+  display: flex;
+  justify-content: flex-start;
   position: relative;
 }
 .service-info {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-top: 60px;
+  margin-left: 71px;
   -webkit-box-pack: start;
   -ms-flex-pack: start;
   justify-content: flex-start;
   -ms-flex-negative: 0;
   flex-shrink: 0;
+  width: 630px;
+  float: right;
 }
 .service-list {
   margin-right: 80px;
@@ -1227,7 +1230,7 @@ ul.service-list {
   padding-bottom: 19px;
   list-style: none;
   width: 239px;
-  height: 42px;
+  height: 41px;
   font-size: 21px;
   line-height: 30px;
   font-weight: bold;
@@ -1239,8 +1242,11 @@ ul.service-list {
 .service-list .service-item:hover {
   background-color: #293449;
 }
+.service-control {
+  width: 200px;
+}
 .service-show {
-  position: absolute;
+  //position: absolute;
   top: 0;
   left: 310px;
   display: none;
@@ -1454,10 +1460,19 @@ p.footer-top-contacts {
   width: 330px;
   padding-top: 1px;
 }
+//div .footer-top-menu {
+//  float: right;
+// width: 340px;
+//}
+.footer-menu-main ul, .footer-menu-catalog ul {
+  margin: 0;
+  padding: 0;
+}
 .footer-menu-main, .footer-menu-catalog {
   margin: 0;
   padding: 0;
   margin-left: -18px;
+  margin-top: 16px;
 }
 .footer-menu-main .white, .footer-menu-catalog .yellow {
   display: -webkit-box;
@@ -1471,22 +1486,34 @@ p.footer-top-contacts {
   align-items: flex-end;
   -ms-flex-negative: 0;
   flex-shrink: 0;
+  flex-wrap: wrap;
+  width: 590px;
 }
 .footer-menu-main .white {
   margin-top: 17px;
+  margin-left: 78px;
+  //margin-right: 59px;
+
 }
 .footer-menu-catalog .yellow {
   margin-top: -4px;
+  margin-left: 41px;
+  padding-left: 60px;
 }
 .footer-menu-main li, .footer-menu-catalog li {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   list-style: none;
-  margin-left: 59px;
   margin-top: 22px;
 }
-.footer-menu-main li:first-child, .footer-menu-catalog li:first-child {
-  margin-left: 0px;
+.footer-menu-main li {
+  margin-right: 59px;
+}
+.footer-menu-catalog li {
+   margin-right: 59px;
+ }
+.footer-menu-main li:last-child, .footer-menu-catalog li:last-child {
+   margin-right: 0;
 }
 .footer-menu-main .white li a {
   font-size: 18px;
@@ -1503,7 +1530,7 @@ p.footer-top-contacts {
 .footer-menu-catalog .yellow li {
   display: inline-block;
   vertical-align: middle;
-  margin-left: 60px;
+  //margin-left: 60px;
 }
 .footer-menu-catalog .yellow li a {
   font-size: 18px;
@@ -2065,8 +2092,8 @@ ul.filter-items {
 }
 .popular-manufacturers-list {
   margin: 0;
-  margin-top: 11px;
-  margin-bottom: 80px;
+  margin-top: 7px;
+  margin-bottom: 81px;
 }
 .popular-manufacturers-list .item:hover {
   -webkit-box-shadow: 0 0 15px rgba(122, 122, 122, 0.5);
@@ -2097,7 +2124,7 @@ ul.filter-items {
 }
 .popular-manufacturers-list .item {
   width: 220px;
-  border: 1px solid gray;
+  border: 1px solid #e5e5e5;
   margin: 10px;
   padding: 10px;
   -webkit-box-pack: justify;
