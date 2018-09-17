@@ -10,24 +10,23 @@
 <body class="catalog-page">
 <header class="main-header">
   <div class="main-header-inner-wrapper">
-    <div class="main-header-inner">
-      <a class="main-header-logo" href="index.html">
-        <img src="img/logo.png" width="110" height="18" alt="«Техномарт»">
-      </a>
+    <div class="main-header-inner"><a href="index.html">
+      <div class="main-header-logo">
+        Техномарт
+      </div></a>
       <div class="site-top-search">
-        <div class="lens"></div>
-        <div class="title">Поиск:</div>
-        <div class="form">
+        <div class="search-form">
           <form class="header-search-form" action="/search/" method="get">
-            <input type="text" name="q" aria-label="Искать">
+            <input type="text" name="q" id="search" aria-label="Искать" placeholder="Поиск:">
+            <label class="lens" for="search"></label>
           </form>
         </div>
       </div>
-      <ul class="site-top-menu">
-        <li class="bookmarks"><a href="/bookmarks/">Закладки: 0</a></li>
-        <li class="cart"><a href="/cart/">Корзина: 10</a></li>
-        <li class="order"><a href="/order/">Оформить заказ</a></li>
-      </ul>
+      <div class="site-top-menu">
+        <a class="bookmarks" href="#bookmarks">Закладки: 0</a>
+        <a class="cart" href="#cart">Корзина: 0</a>
+        <a class="order" href="#order">Оформить заказ</a>
+      </div>
     </div>
   </div>
   <div class="main-navigation-wrapper">
@@ -40,14 +39,14 @@
       <div class="block-user">
         <div class="block-name">
           <ul>
-            <li class="user-name"><a href="/lk/">Равшан Джамшутович</a></li>
-            <li class="exit"><a href="/logout/"><span class="user-exit" aria-label="Выход"></span></a></li>
+            <li class="user-name"><a href="#lk">Равшан Джамшутович</a></li>
+            <li class="exit"><a href="#logout"><span class="user-exit" aria-label="Выход"></span></a></li>
           </ul>
         </div>
         <div class="profile">
           <ul>
-            <li class="orders"><a href="/user/orders/">Мои заказы</a></li>
-            <li class="lk"><a href="/user/profile/">Личный кабинет</a></li>
+            <li class="orders"><a href="#user/orders/">Мои заказы</a></li>
+            <li class="lk"><a href="#user/profile/">Личный кабинет</a></li>
           </ul>
         </div>
       </div>

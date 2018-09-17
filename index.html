@@ -15,22 +15,21 @@
   <div class="main-header-inner-wrapper">
     <div class="main-header-inner">
       <div class="main-header-logo">
-        <img src="img/logo.png" width="110" height="18" alt="«Техномарт»">
+        Техномарт
       </div>
       <div class="site-top-search">
-        <div class="lens"></div>
-        <div class="title">Поиск:</div>
-        <div class="form">
+        <div class="search-form">
           <form class="header-search-form" action="/search/" method="get">
-            <input type="text" name="q" aria-label="Искать">
+              <input type="text" name="q" id="search" aria-label="Искать" placeholder="Поиск:">
+              <label class="lens" for="search"></label>
           </form>
         </div>
       </div>
-      <ul class="site-top-menu">
-        <li class="bookmarks"><a href="/bookmarks/">Закладки: 0</a></li>
-        <li class="cart"><a href="/cart/">Корзина: 10</a></li>
-        <li class="order"><a href="/order/">Оформить заказ</a></li>
-      </ul>
+      <div class="site-top-menu">
+        <a class="bookmarks" href="#bookmarks">Закладки: 0</a>
+        <a class="cart" href="#cart">Корзина: 0</a>
+        <a class="order" href="#order">Оформить заказ</a>
+      </div>
     </div>
   </div>
   <div class="main-navigation-wrapper">
@@ -42,8 +41,8 @@
       </div>
       <div class="block-user">
         <div>
-          <a class="login" href="/login/">Войти</a>
-          <a class="registration" href="/registration/"> Регистрация</a>
+          <a class="login" href="#login">Войти</a>
+          <a class="registration" href="#registration">Регистрация</a>
         </div>
       </div>
     </div>
