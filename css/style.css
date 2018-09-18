@@ -275,7 +275,7 @@ label.lens:active {
   position: relative;
   float: left;
   padding: 13px 25px 0 50px;
-  width: 75px;
+  width: 76px;
 }
 .filled {
   background-color: #ee3643;
@@ -644,10 +644,10 @@ a.login:active, a.registration:active{
 }
 .main-navigation-list li {
   list-style: none;
-  padding-left: 17px;
+  padding-left: 21px;
   padding-top: 1px;
-  padding-right: 25px;
-  margin-right: -22px;
+  padding-right: 22px;
+  margin-right: -17px;
 }
 .main-navigation-list li:hover {
   background-color: #293449;
@@ -2088,12 +2088,10 @@ ul.filter-items {
   margin-top: 49px;
 }
 .sorting {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: end;
   -ms-flex-pack: end;
-  justify-content: start;
+  justify-content: flex-start;
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 13px;
   line-height: 18px;
@@ -2102,25 +2100,27 @@ ul.filter-items {
   background-color: #f7f3ec;
   padding-top: 10px;
   padding-bottom: 10px;
-  padding-left: 22px;
-  margin-top: -5px;
+  padding-left: 16px;
+  margin-top: -4px;
   border-radius: 3px;
 }
 .sorting h3 {
   font-size: 13px;
   line-height: 18px;
 }
+.sorting-items {
+  display: flex;
+  justify-content: space-between;
+}
 .sorting-items a {
   font-size: 13px;
   line-height: 18px;
-  text-decoration: underline;
-  -webkit-text-decoration-style: dotted;
-  text-decoration-style: dotted;
   -webkit-text-decoration-color: #ee3643;
   text-decoration-color: #ee3643;
   color: rgba(0, 0, 0, 0.3);
   margin-left: 30px;
-  margin-right: 36px;
+  margin-right: 39px;
+  border-bottom: 1px dotted #ee3643;
 }
 .sorting-items a:last-child {
   margin-right: 27px;
@@ -2128,11 +2128,11 @@ ul.filter-items {
 }
 .sorting-items a:hover {
   color: rgba(0, 0, 0, 1);
-  text-decoration-style: solid;
+  border-bottom: 1px solid #ee3643;
 }
 .sorting-items a:active {
   color: rgba(238, 54, 67, 1);
-  text-decoration: none;
+  border-bottom: 0;
 }
 .sorting-items a.selected {
   color: #ee3643;
@@ -2166,7 +2166,7 @@ ul.filter-items {
   content: "";
   background: url("../img/svg-technomart/icon-down-dir.svg");
   top: 4px;
-  left: 49px;
+  left: 51px;
   bottom: 0;
   right: 0;
   position: absolute;
@@ -2181,7 +2181,7 @@ ul.filter-items {
   content: "";
   background: url("../img/svg-technomart/icon-up-dir-red.svg");
   top: 4px;
-  left: 16px;
+  left: 20px;
   bottom: 0;
   right: 0;
   position: absolute;
