@@ -1,5 +1,5 @@
-html {  min-width: 960px;
-
+html {
+  min-width: 960px;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
@@ -251,7 +251,6 @@ label.lens:active {
    background-repeat: no-repeat;
    background-position: 17px 12px;
    z-index: 20;
-   //outline-offset: 0;
   outline: none;
  }
 .site-top-search:focus-within {
@@ -323,8 +322,6 @@ ul.site-top-menu {
 .site-top-menu li {
   text-align: center;
   vertical-align: middle;
-  //height: 29px;
-  //width: 150px;
   margin: 0;
   padding-top: 0;
 }
@@ -521,9 +518,6 @@ a.login:active, a.registration:active{
   background: url("../img/svg-technomart/icon-user-blue.svg") no-repeat;
   width: 22px;
 }
-//li.user-name a:active {
-//  color: rgba(255, 255, 255, 0.3);
-//}
 .block-user .user-name:active::before {
   content: "";
   opacity: 0.3;
@@ -892,7 +886,6 @@ img.slider-button-back, img.slider-button-next {
   display: inline-block;
   vertical-align: middle;
   width: 218px;
-  //margin-right: 17px;
   margin-bottom: 21px;
   border: 1px solid #ccc;
   font-weight: bold;
@@ -1096,9 +1089,6 @@ li.product {
 .main-page .product:nth-child(4) {
   margin-right: 0;
 }
-//.catalog-page .product:nth-child(3) {
-//  margin-right: 0;
-//}
 .catalog-items .product li {
   width: 198px;
   border: 1px solid gray;
@@ -1420,7 +1410,6 @@ ul.service-list {
   width: 200px;
 }
 .service-show {
-  //position: absolute;
   top: 0;
   left: 310px;
   display: none;
@@ -1666,7 +1655,6 @@ p.footer-top-contacts {
   -ms-flex-negative: 0;
   flex-shrink: 0;
   flex-wrap: wrap;
-  //width: 590px;
 }
 .footer-menu-main-white {
   margin-top: 17px;
@@ -1786,23 +1774,15 @@ p.footer-top-contacts {
 .breadcrumbs  {
     display: -webkit-box;
     display: -ms-flexbox;
-    //display: flex;
     -webkit-box-pack: start;
     -ms-flex-pack: start;
-    //justify-content: flex-start;
     margin: 0;
     margin-left: 17px;
     padding: 0;
     padding-top: 19px;
-    //align-items: center;
 }
 .breadcrumbs a {
     position: relative;
-
-  //  //  padding-left: 12px;
-//  //  margin-left: 5px;
-//  //  margin-right: 15px;
-//  //  list-style-image: url("../img/svg-technomart/icon-right-small.svg");
   }
 .breadcrumbs a::after {
   content: "";
@@ -1811,7 +1791,6 @@ p.footer-top-contacts {
   left: -26px;
   width: 16px;
   height: 20px;
-  //padding-left: 12px;
   background: url("../img/svg-technomart/icon-right-small.svg") no-repeat;
 }
 .breadcrumbs a:first-child::after {
